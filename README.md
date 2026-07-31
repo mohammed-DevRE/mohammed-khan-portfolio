@@ -1,4 +1,3 @@
-# mohammed-khan-portfolio
 # Mohammed Sabeelullah Khan
 
 ### DevOps Engineer | Site Reliability Engineer | Cloud & Platform Engineer
