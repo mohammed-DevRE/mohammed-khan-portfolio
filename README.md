@@ -1,10 +1,10 @@
-<!-- Synced 2026-08-31 from latest DevOps/SRE resume details. Public version omits private contact details. -->
+<!-- Synced 2026-08-31 from latest DevOps/SRE resume DOCX. Public version omits phone, email, and address. -->
 
-# Mohammed Sabeelullah Khan
+# Sabeelullah Mohammed
 
 ### Senior DevOps Engineer | Site Reliability Engineer | Cloud & Platform Engineer
 
-New Jersey, United States | [LinkedIn](www.linkedin.com/in/k-mohammed-646892217)
+New Jersey, United States | [LinkedIn](https://www.linkedin.com/in/k-mohammed-646892217)
 
 AWS Certified DevOps/SRE professional with 10+ years of experience in cloud infrastructure, build and release engineering, Linux/Unix administration, automation, production support, and platform reliability. Experienced across AWS, Google Cloud Platform, Azure, Kubernetes, Terraform, Docker, Linux, CI/CD, monitoring, incident response, release governance, and Infrastructure as Code.
 
@@ -12,11 +12,9 @@ AWS Certified DevOps/SRE professional with 10+ years of experience in cloud infr
 
 ## Professional Summary
 
-I work across DevOps, SRE, cloud infrastructure, and platform engineering with a focus on highly available production systems, automated delivery, infrastructure reliability, and operational excellence.
+Experienced DevOps Engineer with 10+ years of expertise in cloud infrastructure, build and release management, Linux/Unix administration, and software development. Skilled in designing scalable systems across AWS, GCP, and Azure, building CI/CD pipelines, automating infrastructure, operating Kubernetes platforms, improving observability, and reducing production risk through SRE practices.
 
-My current work includes L2/L3 production support, cloud infrastructure automation, CI/CD pipeline management, Kubernetes operations, release coordination, monitoring, incident management, root-cause analysis, security access governance, and post-deployment validation.
-
-I collaborate with Development, QA, SRE, Cloud, Product, and Operations teams to support stable releases, SLA compliance, incident prevention, and continuous service improvement across cloud and hybrid environments.
+Current work includes L2/L3 production support, cloud infrastructure automation, CI/CD pipeline management, Kubernetes operations, release coordination, monitoring, incident management, root-cause analysis, security access governance, and post-deployment validation.
 
 ---
 
@@ -34,7 +32,7 @@ I collaborate with Development, QA, SRE, Cloud, Product, and Operations teams to
 
 ## Certification
 
-- **AWS Certified Solutions Architect – Associate** — valid January 2026 through 2029
+- **AWS Certified Solutions Architect – Associate**
 - **Credential verification:** https://www.credly.com/badges/8c46e207-9737-481f-ab89-d2f7a4a3a9bb/public_url
 
 ---
@@ -66,11 +64,21 @@ I collaborate with Development, QA, SRE, Cloud, Product, and Operations teams to
 
 Remote | July 2022–Present
 
-- Support SRE and L2/L3 production operations for SAP Ariba, Fieldglass, BTP, HANA, Cobalt, NextGen, Kyma, DWC, and related procurement platforms.
-- Manage CI/CD, release coordination, change governance, rollback planning, deployment validation, production health checks, and hypercare support.
-- Operate AWS, GCP, Kubernetes, Terraform, CloudFormation, Jenkins, Cloud Build, GitHub, Docker, Ansible, Splunk, Dynatrace, Moogsoft, Site24x7, ServiceNow, Rundeck, BigQuery, Postman, and Grafana.
-- Improve platform reliability through monitoring, alert tuning, automation, runbooks, root-cause analysis, and incident-prevention work.
-- Support Linux, JVM, storage, networking, and OpenStack troubleshooting for production availability issues.
+- Provide L2/L3 production support and SRE operations for SAP Ariba, Fieldglass, BTP, HANA, Cobalt, NextGen, Kyma, DWC, and related procurement platforms across global data centers and multi-cloud environments.
+- Manage Git repositories with structured branching, merging, tagging, and release strategies for controlled production releases.
+- Design, implement, and maintain CI/CD pipelines using Jenkins, Cloud Build, GitHub, and Rundeck.
+- Provision, configure, and manage AWS and GCP infrastructure using Terraform and CloudFormation.
+- Deploy, operate, and optimize containerized applications on Kubernetes, GKE, EKS, OpenShift, Docker, and Helm.
+- Lead and participate in Major Incident and Critical Issue Response processes, including bridge calls, stakeholder communication, RCA preparation, and preventive actions.
+- Build observability dashboards and alerting with Dynatrace, Splunk, Moogsoft, Site24x7, Cloud Monitoring, Cloud Logging, Prometheus, and Grafana.
+- Perform JVM troubleshooting, heap dump and thread dump analysis, memory optimization, Linux internals troubleshooting, storage/I/O analysis, and network diagnostics.
+- Automate operational workflows and remediation runbooks using Rundeck, Shell, Perl, and Python.
+- Administer ServiceNow ITSM workflows for incidents, changes, service requests, reporting, dashboards, and change calendar reviews.
+- Enforce IAM, PAM, Delinea Secret Server, RSA, bastion access, SSH, key rotation, and compliance-driven access reviews.
+- Use GCP services including Compute Engine, Cloud Storage, Cloud SQL, BigQuery, Pub/Sub, Cloud Functions, IAM, Cloud Logging, Cloud Monitoring, and GKE.
+- Manage and troubleshoot OpenStack services including Nova, Neutron, Cinder, and Keystone.
+
+**Environment/Tools:** AWS, GCP, Kubernetes, GKE, EKS, Terraform, CloudFormation, Jenkins, Cloud Build, GitHub, Docker, Ansible, Splunk, Dynatrace, Moogsoft, Site24x7, ServiceNow, Rundeck, Python, Shell, SAP Ariba, Fieldglass, BTP, HANA, NextGen, Postman, BigQuery, Grafana.
 
 ### SRE / DevOps Engineer — Verizon
 
@@ -79,8 +87,12 @@ Piscataway, NJ | October 2021–June 2022
 - Managed Kubernetes deployments with Helm charts, scaling strategies, CI/CD pipelines, and automated build workflows.
 - Designed and supported AWS solutions using VPC, IAM, EC2, S3, Lambda, RDS, ALB, Auto Scaling, ECS, and Docker.
 - Automated infrastructure provisioning using Terraform, CloudFormation, and Google Cloud Deployment Manager.
+- Led migration of legacy monolithic systems to microservices using Docker, Kubernetes, and automated CI/CD pipelines.
 - Built Jenkins and GitLab Runner pipelines with automated tests, SonarQube checks, and Docker-based build nodes.
+- Developed Python Lambda functions and REST/SOAP APIs for task automation, EC2 snapshot management, and application integration.
 - Monitored systems with Prometheus, Grafana, Splunk, and Stackdriver.
+
+**Environment/Tools:** Kubernetes, Docker, Helm, Git, GitLab, Jenkins, Terraform, CloudFormation, GCP, AWS, Python, Bash, Ansible, Maven, Apache Tomcat, Nginx, Prometheus, Grafana, Splunk, Stackdriver, SonarQube.
 
 ### Cloud / DevOps Engineer — GoDaddy
 
@@ -90,26 +102,35 @@ Tempe, AZ | July 2020–September 2021
 - Configured GKE clusters, firewall rules, Cloud CDN, Helm, kubectl, ingress controllers, and RBAC.
 - Built Jenkins pipelines integrating Google Container Registry, automated testing, and environment-based promotions.
 - Designed and deployed AWS infrastructure using VPC, EC2, S3, RDS, DynamoDB, IAM, Route 53, CloudWatch, Auto Scaling, CloudFormation, and Terraform.
-- Supported multi-cloud operations across AWS, GCP, and Azure with Docker, Kubernetes, OpenShift, Ansible, Chef, Puppet, ELK Stack, Python, PowerShell, Jira, Confluence, and Artifactory.
+- Automated provisioning with Python, Boto3, AWS CLI, CloudFormation, Docker, Kubernetes, Ansible, Chef, Puppet, and OpenShift.
+- Supported multi-cloud operations across AWS, GCP, and Azure, including Azure VMs, App Services, Storage, SQL, Redis, Azure AD, ARM templates, Bicep, and PowerShell.
+- Automated CI/CD pipelines with Jenkins, Bamboo, GitHub, GitLab, Maven, Nexus, Jira, Confluence, and Artifactory.
+
+**Environment/Tools:** AWS, GCP, Azure, Jenkins, Bamboo, GitHub, GitLab, Maven, Nexus, Chef, Puppet, Ansible, Docker, Kubernetes, OpenShift, ELK Stack, Python, PowerShell, Terraform, CloudFormation, Jira, Confluence.
 
 ### DevOps Engineer / Build and Release Engineer — UCSF
 
 San Francisco, CA | April 2019–June 2020
 
-- Managed Software Configuration Management, packaging, release methodology, and application configuration.
+- Managed Software Configuration Management, code compilation, packaging, release methodology, and application configuration.
 - Automated CI/CD pipelines using Jenkins, Docker, AWS CloudFormation, Maven, ANT, and build pipeline plugins.
-- Designed Azure infrastructure and ETL workflows using Terraform, CloudFormation, Azure Data Factory, T-SQL, Spark SQL, U-SQL, Azure API Management, Function Apps, Event Grid, and Service Bus.
-- Built Jenkins deployments for QA, UAT, staging, and production Linux environments.
+- Designed and maintained Azure environments using Terraform and CloudFormation.
+- Built ETL workflows with Azure Data Factory, T-SQL, Spark SQL, U-SQL, Azure API Management, Function Apps, Event Grid, Service Bus, and Databricks.
+- Built Jenkins jobs for QA, UAT, staging, and production Linux deployments triggered by Git commits.
 - Supported Datadog dashboards, Nexus artifact management, SonarQube code quality, disaster recovery workflows, and WebLogic deployments.
+
+**Environment/Tools:** Jenkins, Jira, SonarQube, Terraform, Azure Cloud Services, Azure Data Factory, SQL Server Azure, Databricks, Maven, ANT, WebLogic, MVC, XML, HTML, CSS, Bootstrap, Web API, AngularJS, jQuery, JavaScript, AJAX.
 
 ### Build and Release Engineer — Google
 
 Hyderabad, India | April 2015–July 2018
 
-- Supported UNIX/Linux systems, user access, permissions, RHEL administration, backups, upgrades, and server provisioning.
+- Supported UNIX/Linux systems, access management, permissions, RHEL administration, backups, upgrades, and server provisioning.
 - Built physical and virtual Linux servers using Kickstart and PXE.
 - Performed LVM operations, kernel tuning, performance troubleshooting, release documentation, and build server maintenance.
-- Maintained CI/CD pipelines, source-code repositories, shell scripts, and release process reporting.
+- Maintained CI/CD pipelines, source-code repositories, shell scripts, build servers, and release process reporting.
+
+**Environment/Tools:** UNIX shell scripting, Linux RPM, Red Hat, CentOS, Debian, DNS, SAN switches, Kickstart.
 
 ### Linux Engineer — Excela Solutions
 
@@ -118,6 +139,8 @@ Hyderabad, India | July 2014–March 2015
 - Provided UNIX/Linux technical support, access management, RHEL installation, patching, backups, upgrades, and configuration management.
 - Built Linux servers using Kickstart and PXE and performed LVM resizing, creation, and migration.
 - Developed shell scripts for administrative automation and supported DNS, SAN switches, Red Hat, CentOS, Debian, and Solaris environments.
+
+**Environment/Tools:** UNIX shell scripting, Linux RPM, Red Hat, CentOS, Debian, DNS, SAN switches.
 
 ---
 
@@ -135,7 +158,7 @@ Hyderabad, India | July 2014–March 2015
 
 ## Education
 
-- **Master of Science in Information Technology**, Wilmington University, Delaware, USA — completed May 2021
+- **Master of Science in Information Technology**, Wilmington University, Delaware, USA — completed 2021
 - **Bachelor of Technology in Computer Science and Engineering**, JNTUH, India — completed 2014
 
 ---
