@@ -1,202 +1,145 @@
+<!-- Synced 2026-08-31 from latest DevOps/SRE resume details. Public version omits private contact details. -->
+
 # Mohammed Sabeelullah Khan
 
-### DevOps Engineer | Site Reliability Engineer | Cloud & Platform Engineer
+### Senior DevOps Engineer | Site Reliability Engineer | Cloud & Platform Engineer
 
-AWS Certified DevOps/SRE professional with 10+ years of experience supporting highly available cloud and hybrid platforms. Experienced in CI/CD, infrastructure automation, Kubernetes, production support, observability, incident response, release engineering, security governance, and operational reliability across AWS, GCP, Azure, and global data centers.
+New Jersey, United States | [LinkedIn](www.linkedin.com/in/k-mohammed-646892217)
 
-[LinkedIn Profile](https://www.linkedin.com/in/mohammed-khan-646892217)
+AWS Certified DevOps/SRE professional with 10+ years of experience in cloud infrastructure, build and release engineering, Linux/Unix administration, automation, production support, and platform reliability. Experienced across AWS, Google Cloud Platform, Azure, Kubernetes, Terraform, Docker, Linux, CI/CD, monitoring, incident response, release governance, and Infrastructure as Code.
 
 ---
 
 ## Professional Summary
 
-I currently work as a DevOps Engineer and Site Reliability Engineer supporting SAP Ariba and related enterprise platforms. My role includes L2/L3 production support, cloud infrastructure automation, CI/CD pipeline management, Kubernetes operations, release coordination, monitoring, incident management, root-cause analysis, security access governance, and post-deployment validation.
+I work across DevOps, SRE, cloud infrastructure, and platform engineering with a focus on highly available production systems, automated delivery, infrastructure reliability, and operational excellence.
 
-I work closely with Development, QA, SRE, IPRE, Cloud, Product, and Operations teams to ensure stable releases, high availability, SLA compliance, and continuous service improvement.
+My current work includes L2/L3 production support, cloud infrastructure automation, CI/CD pipeline management, Kubernetes operations, release coordination, monitoring, incident management, root-cause analysis, security access governance, and post-deployment validation.
 
----
-
-## Current Experience
-
-### DevOps Engineer / Site Reliability Engineer — SAP Ariba
-
-**July 2022 – Present**
-
-Provide L2/L3 production support and SRE operations for SAP Ariba, Fieldglass, BTP, HANA, Cobalt, NextGen, Kyma, DWC, and related procurement platforms across U.S., Europe, and Brazil data centers in AWS, GCP, and hybrid environments.
-
-### Core Responsibilities
-
-* Manage Git repositories with structured branching, merging, tagging, and release strategies.
-* Design and maintain CI/CD pipelines using Jenkins, Cloud Build, GitHub, and Rundeck.
-* Automate build, test, approval, deployment, rollback, and environment promotion across development, QA, staging, and production.
-* Provision and manage cloud infrastructure on AWS and GCP using Terraform and CloudFormation.
-* Deploy and operate containerized applications using Kubernetes, GKE, EKS, OpenShift, Docker, and Helm.
-* Implement rolling deployments, health checks, readiness/liveness probes, autoscaling, and resource optimization.
-* Participate in KTLO activities, on-call rotations, platform onboarding, production readiness, and incident-prevention initiatives.
-* Collaborate with Development, QA, SRE, IPRE, Cloud, and Product teams to troubleshoot issues and improve platform reliability.
+I collaborate with Development, QA, SRE, Cloud, Product, and Operations teams to support stable releases, SLA compliance, incident prevention, and continuous service improvement across cloud and hybrid environments.
 
 ---
 
-## SAP Ariba Release & Deployment Operations
+## Core Strengths
 
-* Coordinate production releases, CAB approvals, change reviews, maintenance windows, release calendars, rollback plans, and hypercare support.
-* Perform pre-deployment validation, topology checks, smoke tests, post-deployment verification, and production health checks.
-* Use ServiceNow for incidents, changes, service requests, dashboards, reports, and ITIL-aligned governance.
-* Use Jira to track maintenance schedules, release activities, and operational tasks.
-* Support deployment processes including:
-
-```text
-Checkout SCM
-Validate Password
-Configure Deployment
-Pre-Check Validation
-DR Start
-Push Deployment
-Topology Check
-Test Deployment
-MonPage Status Report
-Confirm Deployment
-Enable Page Filter
-Deploy
-Restart Web Service
-Post-Deployment Verification
-RC Scrubber
-DR Stop
-Disable Page Filter
-```
-
-* Validate critical application flows and APIs using Postman after deployments.
-* Support manual and Rundeck-based node and service restarts.
-* Ensure release documentation, approvals, rollback criteria, and post-release validations are complete.
-
----
-
-## Monitoring, Observability & Incident Response
-
-* Build and support monitoring, alerting, logging, dashboards, and operational health checks.
-* Use Dynatrace, Splunk, Moogsoft, Site24x7, Prometheus, Grafana, CloudWatch, Cloud Monitoring, and Cloud Logging.
-* Monitor availability, latency, errors, saturation, JVM health, infrastructure capacity, and SLA-impacting alerts.
-* Participate in Major Incident and Critical Issue Response processes.
-* Coordinate bridge calls, stakeholder communication, service restoration, RCA preparation, postmortems, and preventive actions.
-* Perform JVM troubleshooting, thread-dump analysis, heap-dump analysis, memory optimization, and root-cause investigation for unresponsive services.
-* Improve MTTR through proactive monitoring, automation, runbooks, alert tuning, and preventive actions.
-
----
-
-## Cloud, Infrastructure & Automation
-
-### Cloud Platforms
-
-* AWS
-* Google Cloud Platform
-* Azure
-* Hybrid and multi-cloud infrastructure
-
-### GCP Experience
-
-* Compute Engine
-* Cloud Storage
-* Cloud SQL
-* BigQuery
-* Pub/Sub
-* Cloud Functions
-* IAM
-* VPC
-* Cloud Logging
-* Cloud Monitoring
-* GKE
-
-### AWS Experience
-
-* EC2
-* S3
-* IAM
-* VPC
-* CloudWatch
-* EFS
-* CloudFormation
-* EKS
-
-### Infrastructure as Code & Automation
-
-* Terraform
-* CloudFormation
-* Ansible
-* Rundeck
-* Python
-* Bash/Shell
-* Perl
-
----
-
-## Containers & CI/CD
-
-### Containers
-
-* Kubernetes
-* GKE
-* EKS
-* OpenShift
-* Docker
-* Helm
-
-### CI/CD & Source Control
-
-* Jenkins
-* GitHub Actions
-* Cloud Build
-* GitHub
-* GitLab CI
-* Git
-* Rundeck
-
----
-
-## Security, Access & Governance
-
-* Enforce IAM, RBAC, least-privilege access, privileged access management, and compliance-driven access reviews.
-* Work with Delinea Secret Server, RSA, bastion hosts, SSH, password rotation, and key rotation.
-* Support production access requests, access checks, CAM access, and governance procedures.
-* Audit inactive service accounts, unused public IP addresses, and access-related configuration issues.
-* Support infrastructure security with Cloudflare, WAF, CDN, Site Shield, CrowdStrike, and Qualys.
-* Follow change governance, release approvals, access compliance, and audit-readiness practices.
-
----
-
-## Linux, Storage & Network Troubleshooting
-
-* Linux and Unix administration
-* JVM and application performance troubleshooting
-* LVM, SCSI multipath, Ceph fundamentals
-* SAN, NAS, NFS, AWS EFS, and GCP Cloud Storage
-* DNS, DHCP, VLANs, bonding, and routing
-* tcpdump and traceroute
-* OpenStack troubleshooting: Nova, Neutron, Cinder, and Keystone
-
----
-
-## Tools & Technologies
-
-| Area                   | Tools                                                                                         |
-| ---------------------- | --------------------------------------------------------------------------------------------- |
-| Cloud                  | AWS, GCP, Azure, Compute Engine, Cloud Storage, Cloud SQL, BigQuery, Pub/Sub, Cloud Functions |
-| Infrastructure as Code | Terraform, CloudFormation, Ansible                                                            |
-| CI/CD                  | Jenkins, GitHub Actions, Cloud Build, GitLab CI, Rundeck, Git                                 |
-| Containers             | Kubernetes, GKE, EKS, OpenShift, Docker, Helm                                                 |
-| Monitoring             | Dynatrace, Splunk, Moogsoft, Site24x7, Prometheus, Grafana, Datadog, CloudWatch               |
-| Automation             | Python, Bash/Shell, Perl                                                                      |
-| Service Management     | ServiceNow, Jira, ITIL, CAB, Change Management                                                |
-| Security               | IAM, RBAC, Delinea, RSA, Cloudflare, WAF, CrowdStrike, Qualys                                 |
-| Testing                | Postman, smoke testing, post-deployment validation                                            |
+- Cloud infrastructure design, deployment, operations, and troubleshooting across AWS, GCP, Azure, and hybrid environments.
+- CI/CD pipeline design and automation using Jenkins, GitLab CI/CD, Google Cloud Build, GitHub Actions, Bamboo, and Rundeck.
+- Kubernetes and container operations across GKE, EKS, OpenShift, Docker, and Helm.
+- Infrastructure as Code using Terraform, CloudFormation, Ansible, Google Cloud Deployment Manager, ARM templates, and Bicep.
+- Production support, incident response, root-cause analysis, postmortems, monitoring, observability, and MTTR reduction.
+- Linux/Unix administration, JVM troubleshooting, storage troubleshooting, network diagnostics, and OpenStack operations.
+- Cloud security and access governance with IAM, RBAC, PAM, key rotation, bastion access, WAF, CrowdStrike, Qualys, and compliance-driven reviews.
 
 ---
 
 ## Certification
 
-* AWS Certified Solutions Architect – Associate
+- **AWS Certified Solutions Architect – Associate** — valid January 2026 through 2029
+- **Credential verification:** https://www.credly.com/badges/8c46e207-9737-481f-ab89-d2f7a4a3a9bb/public_url
+
+---
+
+## Technical Skills
+
+| Area | Tools and Platforms |
+| --- | --- |
+| Cloud Platforms | AWS, Google Cloud Platform, Azure, hybrid cloud, multi-cloud infrastructure |
+| AWS | EC2, S3, RDS, DynamoDB, IAM, VPC, CloudFormation, CloudWatch, EFS, EKS, Lambda, API Gateway, Route 53, Auto Scaling, SQS, SNS |
+| Google Cloud | Compute Engine, Cloud Storage, Cloud SQL, BigQuery, Pub/Sub, Cloud Functions, IAM, VPC, Cloud Logging, Cloud Monitoring, GKE, Cloud Build |
+| Azure | Virtual Machines, App Services, Storage, SQL, Redis, Azure AD, Azure DevOps, Azure Data Factory, Event Grid, Service Bus, Function Apps, API Management |
+| Infrastructure as Code | Terraform, CloudFormation, Ansible, Google Cloud Deployment Manager, ARM templates, Bicep |
+| CI/CD and Release | Jenkins, GitHub Actions, GitLab CI/CD, Google Cloud Build, Rundeck, Bamboo, Maven, ANT, Nexus, JFrog Artifactory |
+| Containers | Kubernetes, GKE, EKS, OpenShift, Docker, Helm, Docker Compose, Docker Machine |
+| Monitoring and Logging | Dynatrace, Splunk, Moogsoft, Site24x7, Prometheus, Grafana, Datadog, CloudWatch, Cloud Logging, Cloud Monitoring, ELK Stack, Stackdriver |
+| Automation and Scripting | Python, Bash, Shell, Perl, PowerShell, Boto3, AWS CLI |
+| Service Management | ServiceNow, Jira, ITIL, CAB, change management, release calendars, incident management |
+| Security and Governance | IAM, RBAC, Delinea Secret Server, RSA, bastion hosts, SSH, key rotation, Cloudflare, WAF, CDN, Site Shield, CrowdStrike, Qualys |
+| Linux and Infrastructure | RHEL, CentOS, Debian, UNIX, Solaris, Kickstart, PXE, LVM, SCSI multipath, Ceph fundamentals, SAN, NAS, NFS, DNS, DHCP, VLANs, bonding, routing |
+| Application Platforms | Apache, Nginx, Tomcat, JBoss, WebLogic, API Gateway, Postman |
+| Data and Analytics | BigQuery, Cloud SQL, MongoDB, Databricks, Delta Lake, Spark SQL, T-SQL |
+
+---
+
+## Professional Experience
+
+### DevOps Engineer — SAP Ariba
+
+Remote | July 2022–Present
+
+- Support SRE and L2/L3 production operations for SAP Ariba, Fieldglass, BTP, HANA, Cobalt, NextGen, Kyma, DWC, and related procurement platforms.
+- Manage CI/CD, release coordination, change governance, rollback planning, deployment validation, production health checks, and hypercare support.
+- Operate AWS, GCP, Kubernetes, Terraform, CloudFormation, Jenkins, Cloud Build, GitHub, Docker, Ansible, Splunk, Dynatrace, Moogsoft, Site24x7, ServiceNow, Rundeck, BigQuery, Postman, and Grafana.
+- Improve platform reliability through monitoring, alert tuning, automation, runbooks, root-cause analysis, and incident-prevention work.
+- Support Linux, JVM, storage, networking, and OpenStack troubleshooting for production availability issues.
+
+### SRE / DevOps Engineer — Verizon
+
+Piscataway, NJ | October 2021–June 2022
+
+- Managed Kubernetes deployments with Helm charts, scaling strategies, CI/CD pipelines, and automated build workflows.
+- Designed and supported AWS solutions using VPC, IAM, EC2, S3, Lambda, RDS, ALB, Auto Scaling, ECS, and Docker.
+- Automated infrastructure provisioning using Terraform, CloudFormation, and Google Cloud Deployment Manager.
+- Built Jenkins and GitLab Runner pipelines with automated tests, SonarQube checks, and Docker-based build nodes.
+- Monitored systems with Prometheus, Grafana, Splunk, and Stackdriver.
+
+### Cloud / DevOps Engineer — GoDaddy
+
+Tempe, AZ | July 2020–September 2021
+
+- Managed GCP infrastructure using Compute Engine, Cloud Load Balancing, Cloud Storage, Cloud SQL, Stackdriver, and Cloud Deployment Manager.
+- Configured GKE clusters, firewall rules, Cloud CDN, Helm, kubectl, ingress controllers, and RBAC.
+- Built Jenkins pipelines integrating Google Container Registry, automated testing, and environment-based promotions.
+- Designed and deployed AWS infrastructure using VPC, EC2, S3, RDS, DynamoDB, IAM, Route 53, CloudWatch, Auto Scaling, CloudFormation, and Terraform.
+- Supported multi-cloud operations across AWS, GCP, and Azure with Docker, Kubernetes, OpenShift, Ansible, Chef, Puppet, ELK Stack, Python, PowerShell, Jira, Confluence, and Artifactory.
+
+### DevOps Engineer / Build and Release Engineer — UCSF
+
+San Francisco, CA | April 2019–June 2020
+
+- Managed Software Configuration Management, packaging, release methodology, and application configuration.
+- Automated CI/CD pipelines using Jenkins, Docker, AWS CloudFormation, Maven, ANT, and build pipeline plugins.
+- Designed Azure infrastructure and ETL workflows using Terraform, CloudFormation, Azure Data Factory, T-SQL, Spark SQL, U-SQL, Azure API Management, Function Apps, Event Grid, and Service Bus.
+- Built Jenkins deployments for QA, UAT, staging, and production Linux environments.
+- Supported Datadog dashboards, Nexus artifact management, SonarQube code quality, disaster recovery workflows, and WebLogic deployments.
+
+### Build and Release Engineer — Google
+
+Hyderabad, India | April 2015–July 2018
+
+- Supported UNIX/Linux systems, user access, permissions, RHEL administration, backups, upgrades, and server provisioning.
+- Built physical and virtual Linux servers using Kickstart and PXE.
+- Performed LVM operations, kernel tuning, performance troubleshooting, release documentation, and build server maintenance.
+- Maintained CI/CD pipelines, source-code repositories, shell scripts, and release process reporting.
+
+### Linux Engineer — Excela Solutions
+
+Hyderabad, India | July 2014–March 2015
+
+- Provided UNIX/Linux technical support, access management, RHEL installation, patching, backups, upgrades, and configuration management.
+- Built Linux servers using Kickstart and PXE and performed LVM resizing, creation, and migration.
+- Developed shell scripts for administrative automation and supported DNS, SAN switches, Red Hat, CentOS, Debian, and Solaris environments.
+
+---
+
+## SRE, Cloud & Platform Engineering Highlights
+
+- Reliability engineering, SLOs, SLIs, error budgets, production readiness, postmortems, incident response, and toil reduction.
+- Cloud architecture and platform engineering across AWS, Google Cloud Platform, Azure, and hybrid cloud environments.
+- GitOps and deployment automation with Argo CD, GitHub Actions, Azure DevOps, Jenkins, GitLab CI/CD, Cloud Build, and Rundeck.
+- DevSecOps, CSPM, CrowdStrike, cloud security remediation, security remediation, and vulnerability remediation.
+- Observability with OpenTelemetry, OpenSearch, Prometheus, Grafana, Dynatrace, Splunk, Moogsoft, CloudWatch, and Cloud Monitoring.
+- Data engineering and AI/ML platform support, including Databricks, Spark SQL, BigQuery, Azure AI Search, GraphRAG, GenAI, and LLM inference workloads.
+- REST API integration for infrastructure workflows, incident management tools, and legacy system integrations.
+
+---
+
+## Education
+
+- **Master of Science in Information Technology**, Wilmington University, Delaware, USA — completed May 2021
+- **Bachelor of Technology in Computer Science and Engineering**, JNTUH, India — completed 2014
 
 ---
 
 ## Focus Areas
 
-`DevOps` `SRE` `Kubernetes` `Terraform` `AWS` `GCP` `CI/CD` `Release Engineering` `Observability` `Incident Management` `Cloud Engineering`
+DevOps | SRE | Cloud Engineering | Platform Engineering | Kubernetes | Terraform | AWS | GCP | Azure | Linux | CI/CD | Infrastructure as Code | Release Engineering | Observability | Incident Management | Production Support | Automation
