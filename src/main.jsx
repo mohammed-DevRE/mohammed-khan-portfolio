@@ -98,12 +98,14 @@ const roles = [
 ];
 
 const skills = [
-  ["Cloud", ["AWS", "GCP", "Azure", "EC2", "S3", "RDS", "Cloud SQL", "BigQuery", "Pub/Sub"]],
-  ["Containers", ["Kubernetes", "GKE", "EKS", "Docker", "Helm", "OpenShift", "ECS"]],
-  ["Infrastructure as Code", ["Terraform", "CloudFormation", "Ansible", "AWS CDK", "ARM", "Bicep"]],
-  ["CI/CD", ["Jenkins", "GitLab CI/CD", "GitHub Actions", "Cloud Build", "Rundeck", "Maven"]],
-  ["Observability", ["Splunk", "Dynatrace", "Prometheus", "Grafana", "CloudWatch", "Moogsoft", "Site24x7"]],
-  ["Systems", ["Linux", "RHEL", "CentOS", "Solaris", "LVM", "Ceph basics", "tcpdump"]]
+  ["Cloud & Infrastructure", ["AWS", "GCP", "Azure", "EC2", "S3", "RDS", "Cloud SQL", "BigQuery", "Pub/Sub", "VPC", "IAM"]],
+  ["Containers & Orchestration", ["Kubernetes", "GKE", "EKS", "Docker", "Helm", "OpenShift", "ECS", "Ingress", "RBAC"]],
+  ["Infrastructure as Code", ["Terraform", "CloudFormation", "Ansible", "AWS CDK", "ARM", "Bicep", "Deployment Manager"]],
+  ["Reliability & Observability", ["SLOs/SLIs", "Incident response", "RCA", "Runbooks", "Splunk", "Dynatrace", "Prometheus", "Grafana", "Moogsoft"]],
+  ["CI/CD & Automation", ["Jenkins", "GitLab CI/CD", "GitHub Actions", "Cloud Build", "Rundeck", "Maven", "Bamboo", "Postman"]],
+  ["Security & Governance", ["Least-privilege IAM", "RBAC", "Delinea PAM", "RSA", "Bastion hosts", "Key rotation", "SonarQube"]],
+  ["Linux & Platform Operations", ["Linux", "RHEL", "CentOS", "Solaris", "LVM", "Ceph basics", "tcpdump", "DNS", "VLANs"]],
+  ["Data & AI-adjacent Platforms", ["BigQuery", "Databricks", "Spark SQL", "Cloud SQL", "MongoDB", "Azure AI Search", "GraphRAG"]]
 ];
 
 const projects = [
@@ -112,6 +114,9 @@ const projects = [
     title: "Multi-cloud Reliability Platform",
     copy:
       "Terraform and CloudFormation infrastructure patterns for AWS and GCP with Kubernetes deployment standards, monitoring, and secure access controls.",
+    problem: "Cloud services need repeatable provisioning, consistent access controls, and reliable deployment paths across multiple environments.",
+    approach: "Used Terraform, CloudFormation, IAM, Kubernetes standards, tagging, and monitoring patterns to make environments easier to reproduce and operate.",
+    outcome: "Improved release consistency, reduced manual infrastructure drift, and supported scalable operations across AWS and GCP workloads.",
     tags: ["AWS", "GCP", "Terraform", "Kubernetes"]
   },
   {
@@ -119,6 +124,9 @@ const projects = [
     title: "Release Automation System",
     copy:
       "CI/CD workflows across Jenkins, Cloud Build, GitHub, GitLab, and Rundeck to reduce manual release work and improve controlled production delivery.",
+    problem: "Manual handoffs and inconsistent release gates increase deployment risk and slow down production changes.",
+    approach: "Built CI/CD workflows with automated build, test, promotion, and controlled release steps across Jenkins, Cloud Build, GitHub, GitLab, and Rundeck.",
+    outcome: "Reduced repetitive release work and gave teams clearer production deployment controls across dev, QA, staging, and production.",
     tags: ["Jenkins", "Cloud Build", "GitLab", "Rundeck"]
   },
   {
@@ -126,6 +134,9 @@ const projects = [
     title: "Incident Response Runbooks",
     copy:
       "Operational runbooks and monitoring workflows for MI/CIRS response, RCA readiness, anomaly detection, and ServiceNow-driven follow-up.",
+    problem: "During major incidents, teams need fast context, clear ownership, and consistent follow-up to reduce repeat issues.",
+    approach: "Created runbooks, dashboards, ServiceNow workflows, RCA templates, and remediation automations using monitoring signals and Rundeck scripts.",
+    outcome: "Improved incident coordination, RCA readiness, and follow-through on preventive actions for production platforms.",
     tags: ["SRE", "ServiceNow", "RCA", "Automation"]
   }
 ];
@@ -134,7 +145,58 @@ const quickFacts = [
   ["10+ years", "DevOps, SRE, cloud and Linux engineering"],
   ["3 clouds", "AWS, GCP, and Azure production exposure"],
   ["24/7 ops", "Major incident response and production support"],
-  ["IaC first", "Terraform, CloudFormation, Ansible, CDK"]
+  ["IaC first", "Terraform, CloudFormation, Ansible, CDK"],
+  ["Global ops", "US, EU, Brazil, and multi-cloud platform support"],
+  ["L2/L3", "Production support, RCA, JVM, Linux, storage, and network triage"],
+  ["Automation", "Shell, Python, Perl, Rundeck, CI/CD, and runbooks"]
+];
+
+const focusAreas = [
+  {
+    title: "Reliability Engineering",
+    copy: "Incident response, RCA, production readiness, runbooks, monitoring discipline, and operational improvements."
+  },
+  {
+    title: "Observability",
+    copy: "Logs, metrics, dashboards, alerts, Splunk, Dynatrace, Prometheus, Grafana, CloudWatch, and Cloud Monitoring."
+  },
+  {
+    title: "Cloud Platform Engineering",
+    copy: "AWS, GCP, Azure, Kubernetes, Terraform, CloudFormation, IAM, networking, and platform operations."
+  },
+  {
+    title: "Delivery Automation",
+    copy: "Jenkins, GitLab CI/CD, GitHub Actions, Cloud Build, Rundeck, Maven, release controls, and deployment workflows."
+  },
+  {
+    title: "DevSecOps & Governance",
+    copy: "IAM, RBAC, PAM, bastion access, key rotation, SonarQube, access reviews, and compliance-minded operations."
+  },
+  {
+    title: "FinOps & Optimization",
+    copy: "Right-sizing, tagging, labels, budget monitoring, resource cleanup, and performance-aware cloud cost controls."
+  }
+];
+
+const aiReliability = [
+  "AI/ML platform support for GenAI and LLM inference workloads",
+  "Azure AI Search and GraphRAG concepts for incident knowledge retrieval",
+  "Anomaly detection workflows connected to incident remediation",
+  "Human-in-the-loop operations patterns for safer assisted triage"
+];
+
+const credentials = [
+  {
+    group: "Certification",
+    items: ["AWS Certified Solutions Architect - Associate"]
+  },
+  {
+    group: "Education",
+    items: [
+      "M.S. Information Technology - Wilmington University, Delaware, 2021",
+      "B.Tech Computer Science Engineering - JNTUH, India, 2014"
+    ]
+  }
 ];
 
 const resumeUrl = `${import.meta.env.BASE_URL}MOHAMMED-CV-SRE.pdf`;
@@ -150,7 +212,7 @@ function App() {
           <small>SRE • DevOps • Cloud Engineer</small>
         </a>
         <nav>
-          {["About", "Experience", "Projects", "Skills", "Resume", "Contact"].map((item) => (
+          {["About", "Experience", "Projects", "Skills", "Certifications", "Resume", "Contact"].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`}>
               {item}
             </a>
@@ -220,6 +282,14 @@ function App() {
             <span><Cloud size={20} /> Open to SRE, DevOps, Cloud roles</span>
             <span><BadgeCheck size={20} /> AWS Solutions Architect Associate</span>
           </div>
+          <div className="focus-grid">
+            {focusAreas.map((area) => (
+              <article className="focus-card" key={area.title}>
+                <h3>{area.title}</h3>
+                <p>{area.copy}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -268,6 +338,20 @@ function App() {
                 <div className="project-top"><Icon size={28} /><ExternalLink size={18} /></div>
                 <h3>{project.title}</h3>
                 <p>{project.copy}</p>
+                <dl className="case-details">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>{project.problem}</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>{project.approach}</dd>
+                  </div>
+                  <div>
+                    <dt>Outcome</dt>
+                    <dd>{project.outcome}</dd>
+                  </div>
+                </dl>
                 <div className="tags">
                   {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
                 </div>
@@ -280,14 +364,48 @@ function App() {
       <section id="skills" className="skills">
         <div className="section-intro">
           <p className="section-label">Skills</p>
-          <h2>Tools and technologies</h2>
-          <p>A practical toolkit for building, operating, and improving modern platforms.</p>
+          <h2>Tooling across the reliability lifecycle</h2>
+          <p>A practical toolkit for building, operating, securing, observing, and improving modern platforms.</p>
         </div>
         <div className="skill-grid">
           {skills.map(([group, items]) => (
             <article className="skill-group" key={group}>
               <h3>{group}</h3>
               {items.map((item) => <span key={item}>{item}</span>)}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="ai-section">
+        <div className="section-intro">
+          <p className="section-label">Applied AI Reliability</p>
+          <h2>AI-assisted operations as a secondary specialization</h2>
+          <p>Reliability work increasingly depends on better signal handling, knowledge retrieval, and careful human-in-the-loop automation.</p>
+        </div>
+        <div className="ai-grid">
+          {aiReliability.map((item) => (
+            <article className="ai-card" key={item}>
+              <TerminalSquare size={22} />
+              <p>{item}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="certifications" className="certifications">
+        <div className="section-intro">
+          <p className="section-label">Certifications</p>
+          <h2>Credentials and education</h2>
+          <p>Cloud certification and formal education behind the platform engineering work.</p>
+        </div>
+        <div className="credential-grid">
+          {credentials.map((credential) => (
+            <article className="credential-card" key={credential.group}>
+              <h3>{credential.group}</h3>
+              <ul>
+                {credential.items.map((item) => <li key={item}>{item}</li>)}
+              </ul>
             </article>
           ))}
         </div>
