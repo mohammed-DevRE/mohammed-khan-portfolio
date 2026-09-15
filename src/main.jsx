@@ -142,13 +142,13 @@ const projects = [
 ];
 
 const quickFacts = [
-  ["10+ years", "DevOps, SRE, cloud and Linux engineering"],
-  ["3", "Cloud platforms: AWS, GCP, and Azure"],
-  ["24/7", "Production operations and incident response"],
-  ["L2/L3", "Production support, RCA, JVM, Linux, storage, and network triage"],
-  ["Global", "US, EU, Brazil, and multi-cloud platform support"],
-  ["IaC", "Terraform, CloudFormation, Ansible, AWS CDK"],
-  ["Auto", "Shell, Python, Perl, Rundeck, CI/CD, and runbooks"]
+  ["70+", "Microservices supported"],
+  ["5M+", "Users served"],
+  ["99.95%", "SLA sustained"],
+  ["40%", "Lower MTTD", "MTTD — Mean Time To Detect"],
+  ["30%", "Lower MTTR", "MTTR — Mean Time To Resolve"],
+  ["35%", "Compute-cost reduction"],
+  ["60%", "Faster remediation"]
 ];
 
 const focusAreas = [
@@ -267,10 +267,11 @@ function App() {
       </section>
 
       <section className="metrics" aria-label="Impact metrics">
-        {quickFacts.map(([value, label]) => (
+        {quickFacts.map(([value, label, note]) => (
           <div className="metric" key={value}>
             <strong>{value}</strong>
             <span>{label}</span>
+            {note ? <small>{note}</small> : null}
           </div>
         ))}
       </section>
@@ -480,3 +481,5 @@ function Code2Fallback() {
 function Code2Icon() {
   return <TerminalSquare size={22} />;
 }
+
+

@@ -315,6 +315,15 @@ code b {
   line-height: 1.45;
 }
 
+.metric small {
+  color: #8290a3;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.45;
+}
+
 .metric strong::after {
   content: "";
   color: #4aabf2;
@@ -903,3 +912,4 @@ footer a {
     padding: 26px 20px;
   }
 }
+
