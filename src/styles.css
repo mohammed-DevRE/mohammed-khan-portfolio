@@ -652,6 +652,20 @@ h2 {
   line-height: 1.7;
 }
 
+.credential-card li a {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--blue);
+  font-weight: 750;
+}
+
+.credential-card li span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .resume-band {
   display: grid;
   grid-template-columns: 0.35fr 0.65fr;

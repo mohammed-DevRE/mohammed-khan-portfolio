@@ -188,13 +188,19 @@ const aiReliability = [
 const credentials = [
   {
     group: "Certification",
-    items: ["AWS Certified Solutions Architect - Associate"]
+    items: [
+      {
+        label: "AWS Certified Solutions Architect - Associate",
+        href: "https://www.credly.com/badges/8c46e207-9737-481f-ab89-d2f7a4a3a9bb/public_url",
+        note: "Verify on Credly"
+      }
+    ]
   },
   {
     group: "Education",
     items: [
-      "M.S. Information Technology - Wilmington University, Delaware, 2021",
-      "B.Tech Computer Science Engineering - JNTUH, India, 2014"
+      { label: "M.S. Information Technology - Wilmington University, Delaware, 2021" },
+      { label: "B.Tech Computer Science Engineering - JNTUH, India, 2014" }
     ]
   }
 ];
@@ -404,7 +410,17 @@ function App() {
             <article className="credential-card" key={credential.group}>
               <h3>{credential.group}</h3>
               <ul>
-                {credential.items.map((item) => <li key={item}>{item}</li>)}
+                {credential.items.map((item) => (
+                  <li key={item.label}>
+                    {item.href ? (
+                      <a href={item.href} target="_blank" rel="noreferrer">
+                        {item.label}
+                        <ExternalLink size={14} />
+                      </a>
+                    ) : item.label}
+                    {item.note ? <span>{item.note}</span> : null}
+                  </li>
+                ))}
               </ul>
             </article>
           ))}
