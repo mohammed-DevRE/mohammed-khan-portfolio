@@ -170,8 +170,8 @@ function App() {
             <a className="button primary" href="#projects">
               View Projects <ArrowRight size={18} />
             </a>
-            <a className="button secondary" href="https://github.com/mohammed-DevRE/mohammed-khan-portfolio#readme">
-              <Download size={18} /> View Resume
+            <a className="button secondary" href="/MOHAMMED-CV-SRE.pdf" download>
+              <Download size={18} /> Download Resume
             </a>
           </div>
         </div>
@@ -295,16 +295,16 @@ function App() {
         <div>
           <p className="section-label">Resume</p>
           <h2>Download my resume</h2>
-          <p>Public resume summary with SRE, DevOps, cloud, Linux, automation, and observability experience.</p>
+          <p>PDF resume with SRE, DevOps, cloud, Linux, automation, and observability experience.</p>
         </div>
         <div className="resume-card">
           <BookOpen size={32} />
           <div>
-            <strong>Mohammed Khan — Resume</strong>
-            <span>GitHub public profile version</span>
+            <strong>MOHAMMED-CV-SRE.pdf</strong>
+            <span>Senior DevOps / SRE resume</span>
           </div>
-          <a className="button secondary" href="https://github.com/mohammed-DevRE/mohammed-khan-portfolio#readme">
-            <Download size={18} /> View
+          <a className="button secondary" href="/MOHAMMED-CV-SRE.pdf" download>
+            <Download size={18} /> Download
           </a>
         </div>
       </section>
