@@ -137,6 +137,8 @@ const quickFacts = [
   ["IaC first", "Terraform, CloudFormation, Ansible, CDK"]
 ];
 
+const resumeUrl = `${import.meta.env.BASE_URL}MOHAMMED-CV-SRE.pdf`;
+
 function App() {
   const [openRole, setOpenRole] = useState(0);
 
@@ -170,7 +172,7 @@ function App() {
             <a className="button primary" href="#projects">
               View Projects <ArrowRight size={18} />
             </a>
-            <a className="button secondary" href="/MOHAMMED-CV-SRE.pdf" download>
+            <a className="button secondary" href={resumeUrl} download>
               <Download size={18} /> Download Resume
             </a>
           </div>
@@ -303,7 +305,7 @@ function App() {
             <strong>MOHAMMED-CV-SRE.pdf</strong>
             <span>Senior DevOps / SRE resume</span>
           </div>
-          <a className="button secondary" href="/MOHAMMED-CV-SRE.pdf" download>
+          <a className="button secondary" href={resumeUrl} download>
             <Download size={18} /> Download
           </a>
         </div>
