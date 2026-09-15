@@ -143,12 +143,12 @@ const projects = [
 
 const quickFacts = [
   ["10+ years", "DevOps, SRE, cloud and Linux engineering"],
-  ["3 clouds", "AWS, GCP, and Azure production exposure"],
-  ["24/7 ops", "Major incident response and production support"],
-  ["IaC first", "Terraform, CloudFormation, Ansible, CDK"],
-  ["Global ops", "US, EU, Brazil, and multi-cloud platform support"],
+  ["3", "Cloud platforms: AWS, GCP, and Azure"],
+  ["24/7", "Production operations and incident response"],
   ["L2/L3", "Production support, RCA, JVM, Linux, storage, and network triage"],
-  ["Automation", "Shell, Python, Perl, Rundeck, CI/CD, and runbooks"]
+  ["Global", "US, EU, Brazil, and multi-cloud platform support"],
+  ["IaC", "Terraform, CloudFormation, Ansible, AWS CDK"],
+  ["Auto", "Shell, Python, Perl, Rundeck, CI/CD, and runbooks"]
 ];
 
 const focusAreas = [
@@ -244,6 +244,9 @@ function App() {
               <Download size={18} /> Download Resume
             </a>
           </div>
+          <p className="hero-location">
+            <MapPin size={20} /> Englewood, New Jersey — Cloud Platform, Observability, Incident Response & DevOps Automation
+          </p>
         </div>
         <div className="hero-visual" aria-label="Terminal-style reliability dashboard">
           <div className="terminal">
