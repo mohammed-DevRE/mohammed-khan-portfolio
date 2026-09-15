@@ -170,8 +170,8 @@ function App() {
             <a className="button primary" href="#projects">
               View Projects <ArrowRight size={18} />
             </a>
-            <a className="button secondary" href="/MOHAMMED-CV-SRE.pdf" download>
-              <Download size={18} /> Download Resume
+            <a className="button secondary" href="https://github.com/mohammed-DevRE/mohammed-khan-portfolio#readme">
+              <Download size={18} /> View Resume
             </a>
           </div>
         </div>
@@ -295,16 +295,16 @@ function App() {
         <div>
           <p className="section-label">Resume</p>
           <h2>Download my resume</h2>
-          <p>PDF resume with SRE, DevOps, cloud, Linux, automation, and observability experience.</p>
+          <p>Public resume summary with SRE, DevOps, cloud, Linux, automation, and observability experience.</p>
         </div>
         <div className="resume-card">
           <BookOpen size={32} />
           <div>
-            <strong>MOHAMMED CV - SRE.pdf</strong>
-            <span>Senior DevOps / SRE resume</span>
+            <strong>Mohammed Khan — Resume</strong>
+            <span>GitHub public profile version</span>
           </div>
-          <a className="button secondary" href="/MOHAMMED-CV-SRE.pdf" download>
-            <Download size={18} /> Download
+          <a className="button secondary" href="https://github.com/mohammed-DevRE/mohammed-khan-portfolio#readme">
+            <Download size={18} /> View
           </a>
         </div>
       </section>
@@ -316,8 +316,8 @@ function App() {
           <p>I’m open to SRE, DevOps, Cloud, Kubernetes, Linux, Terraform, and platform engineering opportunities.</p>
         </div>
         <div className="contact-links">
-          <a href="mailto:mohdsab1525@gmail.com"><Mail size={22} /> mohdsab1525@gmail.com</a>
-          <a href="tel:+12019725370"><Server size={22} /> +1 (201) 972-5370</a>
+          <a href="https://www.linkedin.com/in/k-mohammed-646892217" target="_blank" rel="noreferrer"><Mail size={22} /> Contact on LinkedIn</a>
+          <a href="https://github.com/mohammed-DevRE/mohammed-khan-portfolio" target="_blank" rel="noreferrer"><Server size={22} /> GitHub Portfolio</a>
           <a href="https://www.linkedin.com/in/k-mohammed-646892217" target="_blank" rel="noreferrer"><ExternalLink size={22} /> LinkedIn</a>
           <a href="#projects"><Code2Fallback /> Project summaries</a>
         </div>
