@@ -142,13 +142,23 @@ const projects = [
 ];
 
 const quickFacts = [
+  ["10+ years", "DevOps, SRE, cloud and Linux engineering"],
+  ["3 clouds", "AWS, GCP, and Azure production exposure"],
+  ["24/7 ops", "Major incident response and production support"],
+  ["IaC first", "Terraform, CloudFormation, Ansible, CDK"],
+  ["Global ops", "US, EU, Brazil, and multi-cloud platform support"],
+  ["L2/L3", "Production support, RCA, JVM, Linux, storage, and network triage"],
+  ["Automation", "Shell, Python, Perl, Rundeck, CI/CD, and runbooks"]
+];
+
+const achievementMetrics = [
   ["70+", "Microservices supported"],
   ["5M+", "Users served"],
-  ["99.95%", "SLA sustained"],
-  ["40%", "Lower MTTD", "MTTD — Mean Time To Detect"],
-  ["30%", "Lower MTTR", "MTTR — Mean Time To Resolve"],
-  ["35%", "Compute-cost reduction"],
-  ["60%", "Faster remediation"]
+  ["99.96%", "SLA sustained"],
+  ["35%", "Lower MTTD", "MTTD — Mean Time To Detect"],
+  ["33%", "Lower MTTR", "MTTR — Mean Time To Resolve"],
+  ["30%", "Compute-cost reduction"],
+  ["65%", "Faster remediation"]
 ];
 
 const focusAreas = [
@@ -188,6 +198,8 @@ const aiReliability = [
 const credentials = [
   {
     group: "Certification",
+    image: `${import.meta.env.BASE_URL}aws-solutions-architect-associate.png`,
+    imageAlt: "AWS Certified Solutions Architect Associate badge",
     items: [
       {
         label: "AWS Certified Solutions Architect - Associate",
@@ -266,8 +278,17 @@ function App() {
         </div>
       </section>
 
+      <section className="hero-facts" aria-label="Engineering profile highlights">
+        {quickFacts.map(([value, label]) => (
+          <div className="hero-fact" key={value}>
+            <strong>{value}</strong>
+            <span>{label}</span>
+          </div>
+        ))}
+      </section>
+
       <section className="metrics" aria-label="Impact metrics">
-        {quickFacts.map(([value, label, note]) => (
+        {achievementMetrics.map(([value, label, note]) => (
           <div className="metric" key={value}>
             <strong>{value}</strong>
             <span>{label}</span>
@@ -413,6 +434,9 @@ function App() {
           {credentials.map((credential) => (
             <article className="credential-card" key={credential.group}>
               <h3>{credential.group}</h3>
+              {credential.image ? (
+                <img className="credential-badge" src={credential.image} alt={credential.imageAlt} />
+              ) : null}
               <ul>
                 {credential.items.map((item) => (
                   <li key={item.label}>
@@ -481,5 +505,3 @@ function Code2Fallback() {
 function Code2Icon() {
   return <TerminalSquare size={22} />;
 }
-
-

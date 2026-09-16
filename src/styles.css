@@ -282,6 +282,37 @@ code b {
   bottom: 42px;
 }
 
+.hero-facts {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.hero-fact {
+  display: grid;
+  gap: 8px;
+  min-height: 128px;
+  padding: 30px 24px;
+  border-right: 1px solid var(--line);
+}
+
+.hero-fact:last-child {
+  border-right: 0;
+}
+
+.hero-fact strong {
+  color: #09243d;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.hero-fact span {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
 .metrics {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -680,6 +711,13 @@ h2 {
   font-size: 20px;
 }
 
+.credential-badge {
+  display: block;
+  width: min(180px, 72%);
+  height: auto;
+  margin: 4px auto 20px;
+}
+
 .credential-card ul {
   margin: 0;
   padding-left: 18px;
@@ -813,6 +851,7 @@ footer a {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .hero-facts,
   .metrics {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -871,6 +910,7 @@ footer a {
     margin: 10px 0 0;
   }
 
+  .hero-facts,
   .metrics,
   .fact-row,
   .focus-grid,
@@ -882,6 +922,7 @@ footer a {
     grid-template-columns: 1fr;
   }
 
+  .hero-fact,
   .metric {
     padding: 24px 20px;
     border-right: 0;
@@ -912,4 +953,5 @@ footer a {
     padding: 26px 20px;
   }
 }
+
 
