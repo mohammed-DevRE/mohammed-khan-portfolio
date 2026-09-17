@@ -354,7 +354,9 @@ const resumeUrl = `${import.meta.env.BASE_URL}MOHAMMED-CV-SRE.pdf`;
 function Brand() {
   return (
     <a className="brand" href="#home" aria-label="Sabeelullah K Mohammed home">
-      <span className="brand-mark">SKM</span>
+      <span className="brand-mark" aria-hidden="true">
+        <span>S</span><span>K</span><span>M</span>
+      </span>
       <span className="brand-copy">
         <strong>SABEELULLAH K MOHAMMED</strong>
         <small>DevOps | Cloud | SRE</small>
@@ -437,14 +439,16 @@ function App() {
       </section>
 
       <section className="technology-rail" aria-label="Technology toolkit">
-        <div className="technology-heading"><span /> TECHNOLOGIES I WORK WITH</div>
-        <div className="technology-grid">
-          {technologies.map((technology) => (
-            <div className="technology-item" key={technology}>
-              <TechLogo name={technology} />
-              <small>{technology.replace("Microsoft ", "")}</small>
-            </div>
-          ))}
+        <div className="technology-heading"><span /> TECHNOLOGY THAT KEEPS PRODUCTION MOVING</div>
+        <div className="technology-marquee" aria-hidden="true">
+          <div className="technology-track">
+            {[...technologies, ...technologies].map((technology, index) => (
+              <div className="technology-item" key={`${technology}-${index}`}>
+                <TechLogo name={technology} />
+                <small>{technology.replace("Microsoft ", "")}</small>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="technology-values">
           <span>INFRASTRUCTURE</span>
