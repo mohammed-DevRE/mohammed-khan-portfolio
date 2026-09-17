@@ -1211,3 +1211,8 @@ footer { color: #08213d; }
   .marquee-track span { margin: 0; }
 }
 
+/* Reference-inspired geometric hero treatment and luminous technology marks. */
+.hero{position:relative;overflow:hidden;background-color:#f7fbff;background-image:linear-gradient(135deg,#087ce51c 0 10%,transparent 10% 78%,#13c7b51c 78% 87%,transparent 87%),linear-gradient(45deg,transparent 0 70%,#2878d01a 70% 71%,transparent 71%),linear-gradient(135deg,transparent 0 22%,#dceeff 22% 23%,transparent 23%),radial-gradient(#2878d055 1.5px,transparent 1.5px);background-size:auto,auto,auto,22px 22px;background-position:0 0,0 0,0 0,calc(100% - 12px) 34px}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,transparent 0 14%,#16a6a12e 14% 22%,transparent 22%),linear-gradient(45deg,transparent 0 78%,#2878d02e 78% 90%,transparent 90%);clip-path:polygon(0 0,34% 0,50% 25%,100% 0,100% 100%,74% 100%,60% 76%,0 100%);opacity:.9}
+.hero>*{position:relative;z-index:1}.marquee-track span{filter:drop-shadow(0 0 5px #2878d080);text-shadow:0 0 10px #16a6a166}.marquee-track span svg{filter:drop-shadow(0 0 7px currentColor)}
+
