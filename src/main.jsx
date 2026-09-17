@@ -15,6 +15,17 @@ import {
   TimerReset,
   Workflow
 } from "lucide-react";
+import {
+  SiDocker,
+  SiGooglecloud,
+  SiGrafana,
+  SiJenkins,
+  SiKubernetes,
+  SiPrometheus,
+  SiSplunk,
+  SiTerraform
+} from "react-icons/si";
+import { TbBrandAws, TbBrandAzure } from "react-icons/tb";
 import "./styles.css";
 
 const roles = [
@@ -216,7 +227,18 @@ const credentials = [
 ];
 
 const resumeUrl = `${import.meta.env.BASE_URL}MOHAMMED-CV-SRE.pdf`;
-const technologies = ["AWS", "Google Cloud", "Microsoft Azure", "Kubernetes", "Terraform", "Docker", "Jenkins", "Prometheus", "Grafana", "Splunk"];
+const technologies = [
+  { name: "AWS", Icon: TbBrandAws },
+  { name: "Google Cloud", Icon: SiGooglecloud },
+  { name: "Microsoft Azure", Icon: TbBrandAzure },
+  { name: "Kubernetes", Icon: SiKubernetes },
+  { name: "Terraform", Icon: SiTerraform },
+  { name: "Docker", Icon: SiDocker },
+  { name: "Jenkins", Icon: SiJenkins },
+  { name: "Prometheus", Icon: SiPrometheus },
+  { name: "Grafana", Icon: SiGrafana },
+  { name: "Splunk", Icon: SiSplunk }
+];
 
 function App() {
   const [openRole, setOpenRole] = useState(0);
@@ -287,7 +309,10 @@ function App() {
         <div className="marquee-window">
           <div className="marquee-track">
             {[...technologies, ...technologies].map((technology, index) => (
-              <span key={`${technology}-${index}`}><i aria-hidden="true" />{technology}</span>
+              <span key={`${technology.name}-${index}`}>
+                <technology.Icon aria-hidden="true" />
+                {technology.name}
+              </span>
             ))}
           </div>
         </div>
