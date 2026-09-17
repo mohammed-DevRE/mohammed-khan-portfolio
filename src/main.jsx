@@ -353,7 +353,7 @@ function App() {
     <main>
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Mohammed Khan home">
-          <span>Mohammed Khan</span>
+          <span>SABEELULLAH K MOHAMMED</span>
           <small>SRE • DevOps • Cloud Engineer</small>
         </a>
         <nav>
@@ -374,7 +374,8 @@ function App() {
         </div>
         <div className="hero-copy">
           <p className="hero-kicker"><span /> Senior SRE · DevOps · Cloud Engineer</p>
-          <h1><span>Mohammed</span><span>Khan</span></h1>
+          <h1><span>SABEELULLAH K</span><span>MOHAMMED</span></h1>
+          <div className="hero-triad">CLOUD <b>|</b> AUTOMATION <b>|</b> RELIABILITY</div>
           <h2 className="hero-statement">Building reliable cloud platforms with automation and observability.</h2>
           <p>
             DevOps and SRE engineer with 10+ years of experience across cloud
@@ -382,7 +383,7 @@ function App() {
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
-              View Projects <ArrowRight size={18} />
+              View My Work <ArrowRight size={18} />
             </a>
             <a className="button secondary" href={resumeUrl} download>
               <Download size={18} /> Download Resume
@@ -392,8 +393,8 @@ function App() {
             <MapPin size={20} /> Englewood, New Jersey — Cloud Platform, Observability, Incident Response & DevOps Automation
           </p>
         </div>
-        <div className="hero-visual" aria-label="Terminal-style reliability dashboard">
-          <div className="terminal">
+        <div className="hero-visual" aria-label="Cloud technology logos">
+          <div className="terminal" aria-hidden="true">
             <div className="dots"><span></span><span></span><span></span></div>
             <code>
               <b>mohammed@cloud</b>:~$ kubectl get pods<br />
@@ -404,9 +405,12 @@ function App() {
               systems: stable | alerts: actionable | deploys: controlled
             </code>
           </div>
-          <div className="signal-card aws"><Cloud size={22} /> AWS / GCP / Azure</div>
-          <div className="signal-card k8s"><Layers3 size={22} /> Kubernetes</div>
-          <div className="signal-card obs"><TerminalSquare size={22} /> Observability</div>
+          <div className="signal-card aws"><TechLogo name="AWS" /><span>AWS</span></div>
+          <div className="signal-card docker"><TechLogo name="Docker" /><span>Docker</span></div>
+          <div className="signal-card jenkins"><TechLogo name="Jenkins" /><span>Jenkins</span></div>
+          <div className="signal-card k8s"><TechLogo name="Kubernetes" /><span>Kubernetes</span></div>
+          <div className="signal-card terraform"><TechLogo name="Terraform" /><span>Terraform</span></div>
+          <div className="signal-card github"><TechLogo name="GitHub" /><span>GitHub</span></div>
         </div>
       </section>
 
