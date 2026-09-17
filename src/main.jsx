@@ -701,7 +701,7 @@ function App() {
           <a href="https://www.linkedin.com/in/k-mohammed-646892217" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
           <a href="mailto:mohdsab1525@gmail.com" aria-label="Email"><Mail size={18} /></a>
         </div>
-        <small>© 2026 Sabeelullah K Mohammed · Built for reliable cloud-native systems.</small>
+        <small>© 2026 Sabeelullah K Mohammed · All rights reserved · Built for reliable cloud-native systems.</small>
       </footer>
     </main>
   );
