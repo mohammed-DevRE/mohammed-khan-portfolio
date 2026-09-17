@@ -393,8 +393,14 @@ function App() {
         <div className="hero-geometry hero-geometry-left" aria-hidden="true" />
         <div className="hero-geometry hero-geometry-right" aria-hidden="true" />
         <div className="hero-dots" aria-hidden="true" />
+        <div className="hero-sparkles" aria-hidden="true">
+          {Array.from({ length: 18 }).map((_, index) => <i key={index} />)}
+        </div>
 
         <div className="hero-copy">
+          <div className="hero-portrait" aria-label="Portrait of Sabeelullah K Mohammed">
+            <img src={`${import.meta.env.BASE_URL}sab.png`} alt="Sabeelullah K Mohammed" />
+          </div>
           <div className="hero-triad">CLOUD <b>|</b> AUTOMATION <b>|</b> RELIABILITY</div>
           <h1>
             <span>SABEELULLAH K</span>
