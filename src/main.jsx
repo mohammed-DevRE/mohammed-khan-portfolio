@@ -355,10 +355,7 @@ function Brand() {
   return (
     <a className="brand" href="#home" aria-label="Sabeelullah K Mohammed home">
       <span className="brand-mark" aria-hidden="true">
-        <span>S</span><span>K</span><span>M</span>
-      </span>
-      <span className="brand-photo" aria-hidden="true">
-        <img src={`${import.meta.env.BASE_URL}sab.png`} alt="" />
+        <img src={`${import.meta.env.BASE_URL}skm-logo.png`} alt="" />
       </span>
       <span className="brand-copy">
         <strong>SABEELULLAH K MOHAMMED</strong>
@@ -373,6 +370,12 @@ function App() {
 
   return (
     <main>
+      <div className="page-sparkles" aria-hidden="true">
+        {Array.from({ length: 32 }).map((_, index) => <i key={index} />)}
+      </div>
+      <div className="flash-lines" aria-hidden="true">
+        {Array.from({ length: 7 }).map((_, index) => <i key={index} />)}
+      </div>
       <header className="site-header">
         <Brand />
         <nav aria-label="Primary navigation">
@@ -488,27 +491,34 @@ function App() {
             I focus on reliable systems, controlled delivery, measurable operations, and practical automation
             that helps teams move faster without sacrificing production stability.
           </p>
-          <a className="button primary compact" href="#experience">
-            More About Me <ArrowRight size={16} />
-          </a>
+          <div className="about-actions">
+            <a className="button primary compact" href="#experience">
+              More About Me <ArrowRight size={16} />
+            </a>
+            <div className="about-mini-stats" aria-label="Profile highlights">
+              <span><BadgeCheck size={21} /><strong>10+</strong><small>Years Experience</small></span>
+              <span><Cloud size={23} /><strong>3</strong><small>Cloud Platforms</small></span>
+              <span><Users size={22} /><strong>5M+</strong><small>Users Supported</small></span>
+            </div>
+          </div>
         </div>
 
         <div className="focus-list">
-          {focusAreas.map(([title, copy, Icon]) => (
-            <article className="focus-row" key={title}>
+          {focusAreas.map(([title, copy, Icon], index) => (
+            <article className={`focus-row focus-row-${index + 1}`} key={title}>
               <span><Icon size={20} /></span>
               <div>
                 <strong>{title}</strong>
                 <small>{copy}</small>
               </div>
+              <b>{String(index + 1).padStart(2, "0")}</b>
+              <ArrowRight size={23} className="focus-arrow" />
             </article>
           ))}
         </div>
 
         <div className="about-visual" aria-hidden="true">
-          <div className="mountain mountain-back" />
-          <div className="mountain mountain-mid" />
-          <div className="mountain mountain-front" />
+          <img src={`${import.meta.env.BASE_URL}mountain-trees.png`} alt="" />
           <blockquote>“Automate today<br />for a better tomorrow.”</blockquote>
         </div>
       </section>
@@ -621,6 +631,9 @@ function App() {
       </section>
 
       <section id="certifications" className="certifications-section">
+        <div className="credential-sparkles" aria-hidden="true">
+          {Array.from({ length: 14 }).map((_, index) => <i key={index} />)}
+        </div>
         <div className="section-intro">
           <p className="section-label">Credentials</p>
           <h2>Certification &amp; education</h2>
