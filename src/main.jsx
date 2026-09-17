@@ -9,10 +9,8 @@ import {
   Download,
   ExternalLink,
   Layers3,
-  Mail,
   MapPin,
   Network,
-  Server,
   TerminalSquare,
   TimerReset,
   Workflow
@@ -218,6 +216,7 @@ const credentials = [
 ];
 
 const resumeUrl = `${import.meta.env.BASE_URL}MOHAMMED-CV-SRE.pdf`;
+const technologies = ["AWS", "Google Cloud", "Microsoft Azure", "Kubernetes", "Terraform", "Docker", "Jenkins", "Prometheus", "Grafana", "Splunk"];
 
 function App() {
   const [openRole, setOpenRole] = useState(0);
@@ -242,10 +241,15 @@ function App() {
       </header>
 
       <section id="home" className="hero">
+        <div className="sparkles" aria-hidden="true">
+          {Array.from({ length: 18 }, (_, index) => <i key={index} />)}
+        </div>
         <div className="hero-copy">
-          <h1>Building reliable cloud platforms with automation and observability</h1>
+          <p className="hero-kicker"><span /> Senior SRE · DevOps · Cloud Engineer</p>
+          <h1>Mohammed Khan</h1>
+          <h2 className="hero-statement">Building reliable cloud platforms with automation and observability.</h2>
           <p>
-            I’m Mohammed Khan, a DevOps and SRE engineer with 10+ years of experience across cloud
+            DevOps and SRE engineer with 10+ years of experience across cloud
             infrastructure, Linux systems, CI/CD, Kubernetes, Terraform, monitoring, and incident response.
           </p>
           <div className="hero-actions">
@@ -275,6 +279,17 @@ function App() {
           <div className="signal-card aws"><Cloud size={22} /> AWS / GCP / Azure</div>
           <div className="signal-card k8s"><Layers3 size={22} /> Kubernetes</div>
           <div className="signal-card obs"><TerminalSquare size={22} /> Observability</div>
+        </div>
+      </section>
+
+      <section className="technology-rail" aria-label="Technology toolkit">
+        <p>Technology that keeps production moving</p>
+        <div className="marquee-window">
+          <div className="marquee-track">
+            {[...technologies, ...technologies].map((technology, index) => (
+              <span key={`${technology}-${index}`}><i aria-hidden="true" />{technology}</span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -480,10 +495,7 @@ function App() {
           <p>I’m open to SRE, DevOps, Cloud, Kubernetes, Linux, Terraform, and platform engineering opportunities.</p>
         </div>
         <div className="contact-links">
-          <a href="https://www.linkedin.com/in/k-mohammed-646892217" target="_blank" rel="noreferrer"><Mail size={22} /> Contact on LinkedIn</a>
-          <a href="https://github.com/mohammed-DevRE/mohammed-khan-portfolio" target="_blank" rel="noreferrer"><Server size={22} /> GitHub Portfolio</a>
-          <a href="https://www.linkedin.com/in/k-mohammed-646892217" target="_blank" rel="noreferrer"><ExternalLink size={22} /> LinkedIn</a>
-          <a href="#projects"><Code2Fallback /> Project summaries</a>
+          <a href="https://www.linkedin.com/in/k-mohammed-646892217" target="_blank" rel="noreferrer"><Network size={22} /> Connect with me on LinkedIn <ExternalLink size={18} /></a>
         </div>
       </section>
 
@@ -497,11 +509,3 @@ function App() {
 }
 
 createRoot(document.getElementById("root")).render(<App />);
-
-function Code2Fallback() {
-  return <Code2Icon />;
-}
-
-function Code2Icon() {
-  return <TerminalSquare size={22} />;
-}
