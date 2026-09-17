@@ -565,6 +565,7 @@ h2 {
 .skill-group span {
   display: inline-flex;
   align-items: center;
+  gap: 7px;
   min-height: 28px;
   padding: 5px 10px;
   border: 1px solid #cfe6ef;
@@ -1131,7 +1132,43 @@ nav a:hover { color: #08213d; border-color: var(--teal); }
 .marquee-track span { display: inline-flex; align-items: center; gap: 10px; margin-right: 54px; color: #33475f; font-size: 15px; font-weight: 720; white-space: nowrap; }
 .marquee-track svg { width: 22px; height: 22px; color: #7c8ba0; opacity: .6; transition: opacity 200ms ease, color 200ms ease; }
 .marquee-track span:hover svg { color: var(--teal); opacity: 1; }
+.marquee-track .tech-logo { width: 22px; height: 22px; border: 0; border-radius: 0; background: none; color: #7c8ba0; font-size: 9px; opacity: .6; transition: opacity 200ms ease, color 200ms ease; }
+.marquee-track span:hover .tech-logo { color: var(--teal); opacity: 1; }
 @keyframes marquee { to { transform: translateX(-50%); } }
+
+.tech-logo {
+  --logo-color: #13a7a2;
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  border: 1px solid color-mix(in srgb, var(--logo-color) 45%, transparent);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--logo-color) 16%, #ffffff);
+  color: var(--logo-color);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: -.02em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.tech-logo svg { width: 12px; height: 12px; }
+.tech-logo--brand { --logo-color: var(--blue); }
+
+.contact-logo {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 8px;
+  color: #fff;
+}
+.contact-logo.email { background: linear-gradient(135deg, var(--blue), var(--blue-strong)); }
+.contact-logo.linkedin { background: #0a66c2; }
 
 .hero-facts { border-color: var(--line); background: #ffffff; }
 .hero-fact { border-color: var(--line); }
@@ -1154,7 +1191,6 @@ h2, .focus-card h3, .project-card h3, .skill-group h3, .credential-card h3, .res
 .case-details div { border-color: var(--line); }
 .tags span, .skill-group span { border-color: rgba(19,167,162,.28); color: #0f6f6b; background: rgba(19,167,162,.08); }
 .resume-card span { color: var(--muted); }
-.contact-links { grid-template-columns: minmax(280px, 560px); }
 .contact-links a { justify-content: center; min-height: 84px; color: #16324c; }
 footer { color: #08213d; }
 
@@ -1171,7 +1207,7 @@ footer { color: #08213d; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
   .marquee-track { transform: none; flex-wrap: wrap; justify-content: center; width: auto; padding: 0 24px; gap: 18px 30px; }
-  .marquee-track span:nth-child(n+11) { display: none; }
+  .marquee-track span:nth-child(n+17) { display: none; }
   .marquee-track span { margin: 0; }
 }
 
