@@ -352,8 +352,8 @@ function App() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#home" aria-label="SABEELULLAH MOHAMMED home">
-          <span>SABEELULLAH MOHAMMED</span>
+        <a className="brand" href="#home" aria-label="Mohammed Khan home">
+          <span>Mohammed Khan</span>
           <small>SRE • DevOps • Cloud Engineer</small>
         </a>
         <nav>
@@ -374,7 +374,7 @@ function App() {
         </div>
         <div className="hero-copy">
           <p className="hero-kicker"><span /> Senior SRE · DevOps · Cloud Engineer</p>
-          <h1>SABEELULLAH MOHAMMED</h1>
+          <h1><span>Mohammed</span><span>Khan</span></h1>
           <h2 className="hero-statement">Building reliable cloud platforms with automation and observability.</h2>
           <p>
             DevOps and SRE engineer with 10+ years of experience across cloud
@@ -639,7 +639,7 @@ function App() {
       </section>
 
       <footer>
-        <strong>SABEELULLAH MOHAMMED</strong>
+        <strong>Mohammed Khan</strong>
         <span>Building reliable cloud platforms with automation and observability.</span>
         <a href="#home">Back to top</a>
       </footer>
