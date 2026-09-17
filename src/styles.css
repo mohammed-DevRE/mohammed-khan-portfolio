@@ -375,11 +375,24 @@ main {
   display: grid;
   gap: 0;
   margin: 0;
+  overflow: hidden;
   font-size: clamp(54px, 7.1vw, 108px);
   font-weight: 950;
   line-height: 0.83;
   letter-spacing: -0.055em;
   text-transform: uppercase;
+}
+
+.hero h1::after {
+  content: "";
+  position: absolute;
+  inset: -14% -18%;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 39%, rgba(255, 255, 255, 0.9) 48%, rgba(8, 189, 235, 0.32) 52%, transparent 62%);
+  mix-blend-mode: screen;
+  transform: translateX(-72%) skewX(-14deg);
+  animation: name-shine-line 4.8s ease-in-out infinite;
 }
 
 .name-sparkle {
@@ -665,6 +678,7 @@ main {
 /* ---------- Logos ---------- */
 .tech-logo {
   --logo-color: #2878d0;
+  position: relative;
   display: inline-grid;
   place-items: center;
   flex: 0 0 auto;
@@ -676,11 +690,35 @@ main {
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
+  overflow: hidden;
 }
 
 .tech-logo svg {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
+}
+
+.tech-logo::after {
+  content: "";
+  position: absolute;
+  inset: -24%;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 34%, rgba(255, 255, 255, 0.94) 48%, rgba(8, 189, 235, 0.38) 52%, transparent 64%);
+  transform: translateX(-86%) skewX(-16deg);
+  animation: logo-shine-line 3.8s ease-in-out infinite;
+}
+
+.technology-item:nth-child(2n) .tech-logo::after,
+.tool-chip:nth-child(2n) .tech-logo::after {
+  animation-delay: -1.2s;
+}
+
+.technology-item:nth-child(3n) .tech-logo::after,
+.tool-chip:nth-child(3n) .tech-logo::after {
+  animation-delay: -2.4s;
 }
 
 /* ---------- Technology rail ---------- */
@@ -2000,6 +2038,38 @@ footer > small {
   22% {
     opacity: 0;
     transform: rotate(45deg) scale(0.65);
+  }
+}
+
+@keyframes name-shine-line {
+  0%, 42% {
+    opacity: 0;
+    transform: translateX(-72%) skewX(-14deg);
+  }
+
+  52% {
+    opacity: 1;
+  }
+
+  68%, 100% {
+    opacity: 0;
+    transform: translateX(72%) skewX(-14deg);
+  }
+}
+
+@keyframes logo-shine-line {
+  0%, 34% {
+    opacity: 0;
+    transform: translateX(-86%) skewX(-16deg);
+  }
+
+  48% {
+    opacity: 1;
+  }
+
+  68%, 100% {
+    opacity: 0;
+    transform: translateX(86%) skewX(-16deg);
   }
 }
 
