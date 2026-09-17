@@ -357,6 +357,9 @@ function Brand() {
       <span className="brand-mark" aria-hidden="true">
         <span>S</span><span>K</span><span>M</span>
       </span>
+      <span className="brand-photo" aria-hidden="true">
+        <img src={`${import.meta.env.BASE_URL}sab.png`} alt="" />
+      </span>
       <span className="brand-copy">
         <strong>SABEELULLAH K MOHAMMED</strong>
         <small>DevOps | Cloud | SRE</small>
@@ -407,6 +410,9 @@ function App() {
           <h1>
             <span>SABEELULLAH K</span>
             <span>MOHAMMED</span>
+            <i className="name-sparkle name-sparkle-one" aria-hidden="true" />
+            <i className="name-sparkle name-sparkle-two" aria-hidden="true" />
+            <i className="name-sparkle name-sparkle-three" aria-hidden="true" />
           </h1>
           <h2 className="hero-statement">Building reliable cloud platforms with automation and observability.</h2>
           <div className="hero-keywords">DEVOPS <b>|</b> CLOUD <b>|</b> AUTOMATION <b>|</b> OBSERVABILITY</div>
