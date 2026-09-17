@@ -9,6 +9,7 @@ import {
   Download,
   ExternalLink,
   Layers3,
+  Mail,
   MapPin,
   Network,
   TerminalSquare,
@@ -16,17 +17,116 @@ import {
   Workflow
 } from "lucide-react";
 import {
+  SiAnsible,
+  SiApachemaven,
+  SiBamboo,
+  SiCentos,
+  SiDatabricks,
+  SiDatadog,
   SiDocker,
+  SiDynatrace,
+  SiGithub,
+  SiGithubactions,
+  SiGitlab,
+  SiGooglebigquery,
   SiGooglecloud,
   SiGrafana,
+  SiHelm,
   SiJenkins,
   SiKubernetes,
+  SiLinux,
+  SiMongodb,
+  SiPostman,
   SiPrometheus,
+  SiPython,
+  SiRedhat,
+  SiRedhatopenshift,
+  SiRundeck,
   SiSplunk,
   SiTerraform
 } from "react-icons/si";
 import { TbBrandAws, TbBrandAzure } from "react-icons/tb";
+import { FaLinkedin } from "react-icons/fa6";
 import "./styles.css";
+
+const realIcons = {
+  AWS: TbBrandAws,
+  "Google Cloud": SiGooglecloud,
+  GCP: SiGooglecloud,
+  "Microsoft Azure": TbBrandAzure,
+  Azure: TbBrandAzure,
+  Kubernetes: SiKubernetes,
+  Docker: SiDocker,
+  Helm: SiHelm,
+  OpenShift: SiRedhatopenshift,
+  Terraform: SiTerraform,
+  Ansible: SiAnsible,
+  Jenkins: SiJenkins,
+  GitLab: SiGitlab,
+  "GitLab CI/CD": SiGitlab,
+  GitHub: SiGithub,
+  "GitHub Actions": SiGithubactions,
+  Rundeck: SiRundeck,
+  Maven: SiApachemaven,
+  Bamboo: SiBamboo,
+  Postman: SiPostman,
+  Prometheus: SiPrometheus,
+  Grafana: SiGrafana,
+  Splunk: SiSplunk,
+  Dynatrace: SiDynatrace,
+  Linux: SiLinux,
+  RHEL: SiRedhat,
+  CentOS: SiCentos,
+  Python: SiPython,
+  BigQuery: SiGooglebigquery,
+  Databricks: SiDatabricks,
+  MongoDB: SiMongodb,
+  Datadog: SiDatadog
+};
+
+const logoMarks = {
+  GKE: ["gke", "#4285f4"],
+  EKS: ["eks", "#ff9900"],
+  ECS: ["ecs", "#ff9900"],
+  CloudFormation: ["cf", "#ff4f8b"],
+  "AWS CDK": ["cdk", "#ff9900"],
+  ARM: ["arm", "#0078d4"],
+  Bicep: ["bc", "#519aba"],
+  "Deployment Manager": ["dm", "#4285f4"],
+  "Cloud Build": ["cb", "#4285f4"],
+  Moogsoft: ["mg", "#13a7a2"],
+  SonarQube: ["sq", "#4e9bcd"],
+  Solaris: ["sol", "#f80000"],
+  Shell: ["sh", "#89e051"],
+  WebLogic: ["wl", "#f80000"],
+  SQL: ["sql", "#00758f"]
+};
+
+function TechLogo({ name }) {
+  const RealIcon = realIcons[name];
+  if (RealIcon) {
+    return (
+      <i className="tech-logo tech-logo--brand" aria-hidden="true">
+        <RealIcon />
+      </i>
+    );
+  }
+  const [label, color] = logoMarks[name] || [name.slice(0, 2), "#13a7a2"];
+  return (
+    <i className="tech-logo" aria-hidden="true" style={{ "--logo-color": color }}>
+      {label}
+    </i>
+  );
+}
+
+function ToolChip({ name }) {
+  return (
+    <span>
+      {realIcons[name] || logoMarks[name] ? <TechLogo name={name} /> : null}
+      {name}
+    </span>
+  );
+}
 
 const roles = [
   {
@@ -228,16 +328,22 @@ const credentials = [
 
 const resumeUrl = `${import.meta.env.BASE_URL}MOHAMMED-CV-SRE.pdf`;
 const technologies = [
-  { name: "AWS", Icon: TbBrandAws },
-  { name: "Google Cloud", Icon: SiGooglecloud },
-  { name: "Microsoft Azure", Icon: TbBrandAzure },
-  { name: "Kubernetes", Icon: SiKubernetes },
-  { name: "Terraform", Icon: SiTerraform },
-  { name: "Docker", Icon: SiDocker },
-  { name: "Jenkins", Icon: SiJenkins },
-  { name: "Prometheus", Icon: SiPrometheus },
-  { name: "Grafana", Icon: SiGrafana },
-  { name: "Splunk", Icon: SiSplunk }
+  "AWS",
+  "Google Cloud",
+  "Microsoft Azure",
+  "Kubernetes",
+  "Terraform",
+  "Docker",
+  "Jenkins",
+  "GitHub Actions",
+  "GitLab CI/CD",
+  "Cloud Build",
+  "Prometheus",
+  "Grafana",
+  "Splunk",
+  "Dynatrace",
+  "Rundeck",
+  "Ansible"
 ];
 
 function App() {
@@ -309,9 +415,9 @@ function App() {
         <div className="marquee-window">
           <div className="marquee-track">
             {[...technologies, ...technologies].map((technology, index) => (
-              <span key={`${technology.name}-${index}`}>
-                <technology.Icon aria-hidden="true" />
-                {technology.name}
+              <span key={`${technology}-${index}`}>
+                <TechLogo name={technology} />
+                {technology}
               </span>
             ))}
           </div>
@@ -387,7 +493,7 @@ function App() {
                   {role.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}
                 </ul>
                 <div className="tags">
-                  {role.stack.map((tag) => <span key={tag}>{tag}</span>)}
+                  {role.stack.map((tag) => <ToolChip key={tag} name={tag} />)}
                 </div>
               </div>
             </article>
@@ -424,7 +530,7 @@ function App() {
                   </div>
                 </dl>
                 <div className="tags">
-                  {project.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                  {project.tags.map((tag) => <ToolChip key={tag} name={tag} />)}
                 </div>
               </article>
             );
@@ -442,7 +548,7 @@ function App() {
           {skills.map(([group, items]) => (
             <article className="skill-group" key={group}>
               <h3>{group}</h3>
-              {items.map((item) => <span key={item}>{item}</span>)}
+              {items.map((item) => <ToolChip key={item} name={item} />)}
             </article>
           ))}
         </div>
@@ -520,7 +626,15 @@ function App() {
           <p>I’m open to SRE, DevOps, Cloud, Kubernetes, Linux, Terraform, and platform engineering opportunities.</p>
         </div>
         <div className="contact-links">
-          <a href="https://www.linkedin.com/in/k-mohammed-646892217" target="_blank" rel="noreferrer"><Network size={22} /> Connect with me on LinkedIn <ExternalLink size={18} /></a>
+          <a href="mailto:mohdsab1525@gmail.com">
+            <span className="contact-logo email"><Mail size={18} /></span>
+            mohdsab1525@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/k-mohammed-646892217" target="_blank" rel="noreferrer">
+            <span className="contact-logo linkedin"><FaLinkedin size={16} /></span>
+            Connect with me on LinkedIn
+            <ExternalLink size={18} />
+          </a>
         </div>
       </section>
 
