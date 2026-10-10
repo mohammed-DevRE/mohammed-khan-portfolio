@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   ArrowRight,
@@ -370,9 +370,26 @@ function Brand() {
 
 function App() {
   const [openRole, setOpenRole] = useState(0);
+  const [introVisible, setIntroVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setIntroVisible(false), 3000);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   return (
     <main>
+      <div className={`welcome-loader${introVisible ? "" : " welcome-loader-hidden"}`} aria-hidden={!introVisible}>
+        <div className="welcome-loader-card">
+          <div className="welcome-loader-photo">
+            <img src={`${import.meta.env.BASE_URL}sab.png`} alt="" />
+          </div>
+          <div>
+            <span>Welcome to</span>
+            <strong>SABEEL&apos;s portfolio</strong>
+          </div>
+        </div>
+      </div>
       <div className="page-sparkles" aria-hidden="true">
         {Array.from({ length: 32 }).map((_, index) => <i key={index} />)}
       </div>
