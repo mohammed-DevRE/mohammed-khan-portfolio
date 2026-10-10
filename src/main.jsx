@@ -357,6 +357,9 @@ function Brand() {
       <span className="brand-mark" aria-hidden="true">
         <img src={`${import.meta.env.BASE_URL}skm-logo.png`} alt="" />
       </span>
+      <span className="brand-avatar" aria-hidden="true">
+        <img src={`${import.meta.env.BASE_URL}sab.png`} alt="" />
+      </span>
       <span className="brand-copy">
         <strong>SABEELULLAH K MOHAMMED</strong>
         <small>DevOps | Cloud | SRE</small>

@@ -168,7 +168,7 @@ main > footer {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   min-width: 0;
   justify-self: start;
 }
@@ -186,6 +186,28 @@ main > footer {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.brand-avatar {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  padding: 3px;
+  border: 2px solid rgba(6, 27, 79, 0.92);
+  border-radius: 999px;
+  background: #020817;
+  box-shadow: 0 8px 20px rgba(6, 27, 79, 0.16), 0 0 0 4px rgba(8, 127, 245, 0.08);
+  overflow: hidden;
+}
+
+.brand-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center 36%;
 }
 
 .brand-copy {
@@ -2056,6 +2078,12 @@ footer > small {
   .brand-mark {
     width: 76px;
     height: 29px;
+  }
+
+  .brand-avatar {
+    width: 32px;
+    height: 32px;
+    padding: 2px;
   }
 
   .brand-copy strong {
