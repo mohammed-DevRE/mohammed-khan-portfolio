@@ -10,7 +10,7 @@ import {
   Clock,
   Cloud,
   Database,
-  Download,
+  Eye,
   ExternalLink,
   Layers3,
   Mail,
@@ -392,8 +392,8 @@ function App() {
             </a>
           ))}
         </nav>
-        <a className="header-cta" href={resumeUrl} download>
-          <Download size={16} /> Download Resume
+        <a className="header-cta" href={resumeUrl} target="_blank" rel="noopener noreferrer">
+          <Eye size={16} /> View Resume
         </a>
       </header>
 
@@ -423,8 +423,8 @@ function App() {
             <a className="button primary" href="#projects">
               <ArrowRight size={17} /> View My Work
             </a>
-            <a className="button secondary" href={resumeUrl} download>
-              <Download size={17} /> Download Resume
+            <a className="button secondary" href={resumeUrl} target="_blank" rel="noopener noreferrer">
+              <Eye size={17} /> View Resume
             </a>
           </div>
           <p className="hero-location">
@@ -529,7 +529,7 @@ function App() {
             <p className="section-label">Professional Experience</p>
             <h2>Production-focused engineering journey</h2>
           </div>
-          <a href={resumeUrl} download>View Full Resume <ArrowRight size={15} /></a>
+          <a href={resumeUrl} target="_blank" rel="noopener noreferrer">View Full Resume <ArrowRight size={15} /></a>
         </div>
 
         <div className="timeline-grid">
