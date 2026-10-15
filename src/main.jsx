@@ -448,7 +448,7 @@ function App() {
             </a>
           </div>
           <p className="hero-location">
-            <MapPin size={18} /> Englewood, New Jersey · Open to SRE, DevOps, Cloud & Platform Engineering roles
+            <MapPin size={18} /> New Jersey · Open to SRE, DevOps, Cloud & Platform Engineering roles
           </p>
         </div>
 
@@ -699,7 +699,7 @@ function App() {
           </a>
           <div className="contact-location">
             <span className="contact-icon"><MapPin size={20} /></span>
-            <span><small>Location</small><strong>Englewood, New Jersey, USA</strong></span>
+            <span><small>Location</small><strong>New Jersey</strong></span>
           </div>
         </div>
         <a className="button primary contact-cta" href="mailto:mohdsab1525@gmail.com">
