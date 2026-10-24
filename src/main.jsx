@@ -430,13 +430,16 @@ function App() {
             <img src={`${import.meta.env.BASE_URL}sab.png`} alt="Sabeelullah K Mohammed" />
           </div>
           <div className="hero-triad">CLOUD <b>|</b> AUTOMATION <b>|</b> RELIABILITY</div>
+          <div className="hero-name-wrap">
+            <div className="hero-name-waves" aria-hidden="true"><i /><i /></div>
           <h1>
-            <span>SABEELULLAH K</span>
-            <span>MOHAMMED</span>
+            <span className="hero-name-line"><b className="glass-name glass-name-ice">SABEELULLAH</b>{" "}<b className="glass-name glass-name-gold">K</b></span>
+            <span className="glass-name glass-name-teal">MOHAMMED</span>
             <i className="name-sparkle name-sparkle-one" aria-hidden="true" />
             <i className="name-sparkle name-sparkle-two" aria-hidden="true" />
             <i className="name-sparkle name-sparkle-three" aria-hidden="true" />
           </h1>
+          </div>
           <h2 className="hero-statement">Building reliable cloud platforms with automation and observability.</h2>
           <div className="hero-keywords">DEVOPS <b>|</b> CLOUD <b>|</b> AUTOMATION <b>|</b> OBSERVABILITY</div>
           <div className="hero-actions">

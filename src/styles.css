@@ -574,6 +574,45 @@ main > footer {
   font-weight: 900;
 }
 
+.hero-name-wrap {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-name-waves {
+  position: absolute;
+  z-index: -1;
+  inset: -36px -24px;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: 45%;
+  filter: blur(1px);
+}
+
+.hero-name-waves i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 115%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, transparent 0deg 190deg, rgba(65, 125, 245, 0.05) 215deg, rgba(8, 127, 245, 0.2) 265deg, rgba(35, 183, 242, 0.4) 310deg, rgba(116, 103, 246, 0.26) 338deg, transparent 350deg);
+  animation: hero-name-wave 5s linear infinite;
+}
+
+.hero-name-waves i:last-child {
+  width: 92%;
+  background: conic-gradient(from 160deg, transparent 0deg 250deg, rgba(35, 183, 242, 0.12) 275deg, rgba(46, 199, 215, 0.28) 320deg, transparent 345deg);
+  animation-duration: 8s;
+  animation-delay: -2s;
+  animation-direction: reverse;
+}
+
+@keyframes hero-name-wave {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
 .hero h1 {
   position: relative;
   display: grid;
@@ -638,12 +677,35 @@ main > footer {
   animation-delay: 2.1s;
 }
 
-.hero h1 span:first-child {
-  color: var(--navy);
+.hero h1 .glass-name {
+  font: inherit;
+  color: #17649a;
+  -webkit-text-stroke: 0.7px rgba(6, 27, 79, 0.62);
+  filter: drop-shadow(0 2px 0 rgba(6, 27, 79, 0.28)) drop-shadow(0 5px 8px rgba(8, 70, 125, 0.12));
 }
 
-.hero h1 span:last-child {
-  color: var(--blue);
+@supports (background-clip: text) {
+  .hero h1 .glass-name {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.glass-name-ice {
+  background-image: linear-gradient(165deg, #061b4f 4%, #174d83 33%, #2b6090 45%, #173e6e 49%, #082653 53%, #184a79 76%, #061b4f 100%);
+}
+
+.glass-name-gold {
+  background-image: linear-gradient(165deg, #513309 4%, #79501a 33%, #916a2d 45%, #6d4514 49%, #4d2e08 53%, #79501a 76%, #513309 100%);
+}
+
+.glass-name-teal {
+  background-image: linear-gradient(165deg, #033e48 4%, #075a62 33%, #176d74 45%, #07505b 49%, #023b46 53%, #0b5b64 76%, #033e48 100%);
+}
+
+.hero-name-wrap h1::after {
+  opacity: 0.3;
 }
 
 .hero-statement {
