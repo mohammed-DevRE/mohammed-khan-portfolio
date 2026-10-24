@@ -2,6 +2,25 @@
 
 # Sabeelullah Mohammed
 
+## Local development and reviewed deployment
+
+Use the latest patched Node.js 24 LTS release (minimum 24.22.1; see `.nvmrc`).
+Run `npm ci`, `npm audit`, and `npm run build`; use `npm run dev` or
+`npm run preview` for a loopback-only local preview. No lint or test script is
+currently configured.
+
+Pull requests run installation, the security audit, and the build without
+deploying. Merging to `main` or manually dispatching the workflow on `main`
+deploys through the existing `github-pages` environment. Review changes and
+obtain owner approval before pushing or deploying. Configure required reviewers
+for that environment in GitHub settings if an enforced approval gate is needed.
+The legacy `npm run deploy` command also publishes and should only be used after
+approval. Dependabot proposes weekly npm and GitHub Actions updates for review.
+
+This is a static React/Vite site: it has no PHP backend. Files in `public/`,
+including the resume and photos, are publicly downloadable. Never put credentials
+in those files or in frontend environment variables, including `VITE_*` values.
+
 ### Senior DevOps Engineer | Site Reliability Engineer | Cloud & Platform Engineer
 
 New Jersey, United States | [LinkedIn](https://www.linkedin.com/in/k-mohammed-646892217)
