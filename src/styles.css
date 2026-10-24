@@ -475,6 +475,86 @@ main > footer {
   filter: contrast(1.05) brightness(1.04);
 }
 
+.hero-certification {
+  position: absolute;
+  z-index: 6;
+  top: 16px;
+  left: clamp(36px, 10vw, 166px);
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 10px 12px;
+  border: 1px solid #b9dcf7;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(8, 70, 125, 0.18);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.hero-certification .credential-badge {
+  width: 94px;
+  height: auto;
+  margin: 0;
+  animation-duration: 3.2s, 2s;
+}
+
+.hero-certification-art {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.hero-certification-art::after {
+  content: "";
+  position: absolute;
+  inset: -25% -60%;
+  pointer-events: none;
+  background: linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.18) 44%, rgba(255, 255, 255, 0.95) 49%, rgba(184, 235, 255, 0.55) 53%, transparent 59%);
+  transform: translateX(-70%);
+  animation: hero-certification-shine 2.4s ease-in-out infinite;
+}
+
+@keyframes hero-certification-shine {
+  0%, 12% { transform: translateX(-70%); }
+  62%, 100% { transform: translateX(70%); }
+}
+
+.hero-certification > span:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.hero-certification:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+#certifications {
+  scroll-margin-top: 100px;
+}
+
+@media (max-width: 1000px) {
+  .hero-certification {
+    left: 20px;
+    right: auto;
+    top: 20px;
+    padding: 8px;
+  }
+
+  .hero-certification .credential-badge {
+    width: 70px;
+  }
+
+  .hero-certification span {
+    font-size: 8px;
+  }
+}
+
 .hero-triad,
 .hero-keywords {
   color: #607e9f;
@@ -680,14 +760,15 @@ main > footer {
 
 .hero-logos {
   position: absolute;
-  z-index: 4;
+  z-index: 6;
   display: grid;
   gap: 8px;
+  pointer-events: none;
 }
 
 .hero-logos-left {
   left: clamp(36px, 10vw, 166px);
-  top: 82px;
+  top: 200px;
 }
 
 .hero-logos-right {
@@ -700,9 +781,9 @@ main > footer {
   place-items: center;
   width: 94px;
   height: 94px;
-  border: 1px solid #dce9f5;
-  background: rgba(255, 255, 255, 0.92);
-  box-shadow: 0 14px 34px rgba(8, 70, 125, 0.1);
+  border: 2px solid #b8d6f0;
+  background: #fff;
+  box-shadow: 0 14px 34px rgba(8, 70, 125, 0.2);
   transform: rotate(45deg);
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
   overflow: hidden;
@@ -730,6 +811,7 @@ main > footer {
 
 .signal-card > * {
   transform: rotate(-45deg);
+  z-index: 1;
 }
 
 .signal-card .tech-logo,
@@ -2062,7 +2144,7 @@ footer > small {
 
   .hero-logos-left,
   .hero-logos-right {
-    opacity: 0.52;
+    opacity: 1;
   }
 
   .hero-logos-left { left: -2px; }

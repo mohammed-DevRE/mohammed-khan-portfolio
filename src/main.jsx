@@ -463,6 +463,12 @@ function App() {
           <div className="signal-card github"><TechLogo name="GitHub" /></div>
         </div>
 
+        <a className="hero-certification" href="#certifications" aria-label="AWS Certified Solutions Architect Associate — view certification">
+          <span className="hero-certification-art">
+            <img className="credential-badge" src={`${import.meta.env.BASE_URL}aws-solutions-architect-associate.png`} alt="AWS Certified Solutions Architect Associate" width="120" height="120" />
+          </span>
+          <span>AWS Certified <ArrowRight size={12} aria-hidden="true" /></span>
+        </a>
         <p className="hero-side-note hero-side-note-left">TURNING INFRASTRUCTURE INTO OPPORTUNITY</p>
         <p className="hero-side-note hero-side-note-right">AUTOMATE<br />MONITOR<br />SCALE</p>
       </section>
