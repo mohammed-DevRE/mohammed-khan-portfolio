@@ -743,6 +743,19 @@ function App() {
           <a href="#contact">Discuss a Project <ArrowRight size={15} /></a>
         </div>
 
+        <figure className="workflow-showcase">
+          <div className="workflow-heading">
+            <div><p className="section-label">GitHub Migration &amp; CI/CD</p><h3>From legacy repositories to reusable workflows</h3></div>
+            <a href={`${import.meta.env.BASE_URL}github-migration-workflow.gif`} target="_blank" rel="noopener noreferrer">View GIF <ExternalLink size={15} /></a>
+          </div>
+          <video className="workflow-animation" autoPlay loop muted playsInline controls preload="metadata" poster={`${import.meta.env.BASE_URL}github-migration-workflow.png`} aria-label="Illustrative GitHub migration and delivery workflow: migrate repositories, convert to reusable GitHub Actions YAML, build and test, secure, approve, and release.">
+            <source src={`${import.meta.env.BASE_URL}github-migration-workflow.mp4`} type="video/mp4" />
+            <a href={`${import.meta.env.BASE_URL}github-migration-workflow.gif`}>View animated GitHub migration workflow</a>
+          </video>
+          <img className="workflow-still" src={`${import.meta.env.BASE_URL}github-migration-workflow.png`} alt="GitLab, Azure DevOps, and Bitbucket to GitHub: migrate, convert, build and test, secure, approve, and release." width="1200" height="675" loading="lazy" />
+          <figcaption>Illustrative workflow: preserve source history, translate pipelines into reusable GitHub Actions, and validate controlled releases.</figcaption>
+        </figure>
+
         <div className="project-grid">
           {projects.map((project) => {
             const Icon = project.icon;

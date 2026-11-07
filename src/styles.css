@@ -2770,3 +2770,14 @@ footer > small {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* GitHub migration workflow showcase */
+.workflow-showcase { margin: 0 0 28px; padding: 22px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+.workflow-heading { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 18px; }
+.workflow-heading h3 { margin: 6px 0 0; color: var(--navy); font-size: clamp(19px, 2vw, 27px); }
+.workflow-heading a { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; color: #1764ad; }
+.workflow-animation, .workflow-still { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; background: #071120; }
+.workflow-still { display: none; }
+.workflow-showcase figcaption { margin-top: 12px; color: #536985; font-size: 14px; line-height: 1.5; }
+@media (max-width: 600px) { .workflow-showcase { padding: 12px; } .workflow-heading { align-items: flex-start; flex-direction: column; gap: 12px; } }
+@media (prefers-reduced-motion: reduce) { .workflow-animation { display: none; } .workflow-still { display: block; } }
