@@ -167,127 +167,258 @@ function ToolChip({ name }) {
 
 const roles = [
   {
-    period: "Jul 2022 – Present",
-    title: "DevOps Engineer / SRE",
-    company: "SAP Ariba",
-    place: "Remote",
-    summary:
-      "L2/L3 production support and SRE operations across enterprise cloud platforms, release engineering, incident response, automation, and observability.",
-    bullets: [
-      "Designed and maintained Jenkins, Cloud Build, GitHub, and Rundeck delivery pipelines across development, QA, staging, and production.",
-      "Provisioned AWS and GCP infrastructure with Terraform and CloudFormation for secure, fault-tolerant environments.",
-      "Operated Kubernetes workloads with rolling deployments, autoscaling, readiness/liveness checks, and resource optimization.",
-      "Led major incident bridges, RCA preparation, preventive-action planning, and ServiceNow change workflows.",
-      "Built observability workflows with Dynatrace, Splunk, Prometheus, Grafana, Cloud Monitoring, and operational runbooks."
+    "period": "Jul 2022 – Present",
+    "title": "DevOps Engineer",
+    "company": "SAP Ariba",
+    "place": "Remote",
+    "summary": "GitHub migration, CI/CD engineering, release automation, and production reliability for enterprise application delivery.",
+    "bullets": [
+      "Migrated GitLab repositories to GitHub and converted GitLab CI/CD pipelines into GitHub Actions YAML workflows for automated builds, tests, and deployments.",
+      "Manage branching, merging, tagging, and releases; partner with developers on pull requests, code reviews, migration guidance, and engineering standards.",
+      "Design multi-stage pipelines with GitHub Actions, Jenkins, Cloud Build, and Rundeck across development, QA, staging, and production.",
+      "Deploy Docker and Kubernetes workloads on GKE/EKS; provision AWS and GCP infrastructure with Terraform and CloudFormation.",
+      "Automate operational workflows with Python, Shell, Perl, and Rundeck; troubleshoot build and deployment failures using logs, JVM diagnostics, and observability tools.",
+      "Coordinate major incidents, root-cause analysis, preventive actions, and ServiceNow change workflows."
     ],
-    stack: ["AWS", "GCP", "Kubernetes", "Terraform", "Jenkins", "Rundeck", "Splunk", "Dynatrace", "Grafana"]
+    "stack": [
+      "GitHub Actions",
+      "GitLab",
+      "Jenkins",
+      "Python",
+      "Kubernetes",
+      "Terraform",
+      "AWS",
+      "GCP",
+      "Rundeck"
+    ]
   },
   {
-    period: "Oct 2021 – Jun 2022",
-    title: "Cloud / DevOps Engineer",
-    company: "Verizon",
-    place: "Piscataway, NJ",
-    summary:
-      "Built cloud infrastructure, Kubernetes delivery workflows, infrastructure automation, and monitoring for production workloads.",
-    bullets: [
-      "Managed Kubernetes deployments with Helm charts, scaling controls, CI/CD workflows, and automated builds.",
-      "Implemented AWS services across VPC, IAM, EC2, S3, Lambda, RDS, ALB, Auto Scaling, ECS, and Docker.",
-      "Automated infrastructure with Terraform, CloudFormation, and Google Cloud Deployment Manager.",
-      "Integrated Jenkins, GitLab Runner, SonarQube, Prometheus, Grafana, Splunk, and Cloud Monitoring."
+    "period": "Oct 2021 – Jun 2022",
+    "title": "SRE/DevOps Engineer",
+    "company": "Verizon",
+    "place": "Piscataway, NJ",
+    "summary": "Repository and pipeline migration, Kubernetes delivery, cloud infrastructure automation, and application reliability.",
+    "bullets": [
+      "Migrated GitLab repositories and CI/CD pipelines to GitHub and GitHub Actions using YAML workflows and GitHub-hosted runners.",
+      "Resolved migration-related build and deployment failures through workflow log analysis and root-cause troubleshooting.",
+      "Managed Kubernetes deployments with Helm and built Jenkins/GitLab Runner pipelines with automated tests and SonarQube checks.",
+      "Automated infrastructure with Terraform and CloudFormation; supported AWS, Docker, ECS, Python Lambda functions, and monitoring with Prometheus, Grafana, and Splunk."
     ],
-    stack: ["AWS", "Kubernetes", "Helm", "Docker", "Terraform", "GitLab", "Jenkins", "Prometheus"]
+    "stack": [
+      "GitHub Actions",
+      "GitLab",
+      "Jenkins",
+      "AWS",
+      "Kubernetes",
+      "Helm",
+      "Terraform",
+      "Prometheus"
+    ]
   },
   {
-    period: "Jul 2020 – Sep 2021",
-    title: "Cloud / DevOps Engineer",
-    company: "GoDaddy",
-    place: "Tempe, AZ",
-    summary:
-      "Supported multi-cloud infrastructure, GKE clusters, Jenkins delivery pipelines, container platforms, and IaC automation.",
-    bullets: [
-      "Managed GCP infrastructure with Compute Engine, load balancing, Cloud Storage, Cloud SQL, and Cloud Monitoring.",
-      "Designed GKE clusters with Helm, kubectl, ingress controllers, and RBAC for secure scalable deployments.",
-      "Built AWS infrastructure with CloudFormation and Terraform across VPC, EC2, RDS, DynamoDB, IAM, Route 53, and CloudWatch.",
-      "Supported Azure VMs, App Services, Storage, SQL, Azure AD, ARM templates, Bicep, and PowerShell."
+    "period": "Jul 2020 – Sep 2021",
+    "title": "Cloud/DevOps Engineer",
+    "company": "GoDaddy",
+    "place": "Tempe, AZ",
+    "summary": "GitHub repository consolidation, Jenkins delivery pipelines, container platforms, and multi-cloud infrastructure automation.",
+    "bullets": [
+      "Migrated repositories from GitLab, Azure DevOps, and Bitbucket to GitHub while preserving commit history, branches, and tags.",
+      "Used Git, GitHub CLI, and GitHub REST APIs for repository migration and configuration workflows.",
+      "Built Jenkins CI/CD pipelines with automated tests and artifact management using Maven, Nexus, and Artifactory.",
+      "Managed GCP/GKE infrastructure with Helm, kubectl, ingress, and RBAC; automated AWS and Azure environments with Terraform, CloudFormation, PowerShell, and Python."
     ],
-    stack: ["GCP", "GKE", "AWS", "Azure", "Jenkins", "OpenShift", "Terraform", "Python"]
+    "stack": [
+      "GitHub",
+      "GitHub CLI",
+      "GitLab",
+      "Jenkins",
+      "GKE",
+      "Terraform",
+      "Python",
+      "Azure"
+    ]
   },
   {
-    period: "Apr 2019 – Jun 2020",
-    title: "DevOps / Build & Release Engineer",
-    company: "UCSF",
-    place: "San Francisco, CA",
-    summary:
-      "Owned build and release workflows, Azure automation, Jenkins jobs, API infrastructure, and data platform support.",
-    bullets: [
-      "Automated CI/CD pipelines using Jenkins, Docker, AWS CloudFormation, Maven, ANT, and build pipeline plugins.",
-      "Designed Azure environments and Datadog dashboards with Terraform and CloudFormation.",
-      "Implemented ETL and data workflows with Azure data services, SQL, and Spark-based tooling.",
-      "Deployed applications to WebLogic across production and staging environments."
+    "period": "Apr 2019 – Jun 2020",
+    "title": "DevOps Engineer/Build and Release Engineer",
+    "company": "UCSF",
+    "place": "San Francisco, CA",
+    "summary": "Source control, secure CI/CD workflows, build automation, and multi-environment release coordination.",
+    "bullets": [
+      "Built GitHub repositories and GitHub Actions YAML workflows for automated builds, testing, and deployments.",
+      "Established branching, merging, pull request, code review, and release management practices.",
+      "Managed repository access, token security, secrets, and automated security scanning.",
+      "Maintained Jenkins and multi-stage CI/CD pipelines; automated packaging and deployments with Docker, Maven, Ant, Terraform, and CloudFormation."
     ],
-    stack: ["Azure", "Jenkins", "Terraform", "Datadog", "Maven", "WebLogic", "SQL"]
+    "stack": [
+      "GitHub",
+      "GitHub Actions",
+      "Jenkins",
+      "Docker",
+      "Maven",
+      "Terraform",
+      "CloudFormation"
+    ]
   },
   {
-    period: "Jul 2014 – Jul 2018",
-    title: "Linux / Build & Release Engineer",
-    company: "Excela Solutions & Google",
-    place: "Hyderabad, India",
-    summary:
-      "Built a Linux systems foundation across administration, provisioning, scripting, server builds, and release support.",
-    bullets: [
-      "Administered UNIX, Red Hat Linux, CentOS, Debian, and Solaris systems for production support.",
-      "Created users, groups, permissions, Kickstart/PXE builds, LVM operations, backups, upgrades, and shell automation.",
-      "Troubleshot kernel, storage, DNS, SAN, access, and performance issues across multi-user environments."
+    "period": "Apr 2015 – Jul 2018",
+    "title": "Build and Release Engineer",
+    "company": "Google",
+    "place": "Hyderabad, India",
+    "summary": "Build infrastructure, software packaging, release support, and Linux automation.",
+    "bullets": [
+      "Configured and maintained build servers, CI/CD pipelines, and source repositories; resolved compilation, integration, and release issues.",
+      "Supported packaging, deployment readiness, release documentation, and post-release reviews.",
+      "Automated Linux administration and environment configuration with Shell scripts and Infrastructure as Code practices.",
+      "Administered Red Hat Linux systems, Kickstart/PXE provisioning, access controls, LVM, backups, and upgrades."
     ],
-    stack: ["Linux", "RHEL", "CentOS", "Shell", "Kickstart", "PXE", "LVM", "DNS"]
+    "stack": [
+      "Linux",
+      "RHEL",
+      "Shell",
+      "CI/CD",
+      "Kickstart",
+      "PXE",
+      "LVM"
+    ]
+  },
+  {
+    "period": "Jul 2014 – Mar 2015",
+    "title": "Linux Engineer",
+    "company": "Excela Solutions",
+    "place": "Hyderabad, India",
+    "summary": "UNIX/Linux administration, server provisioning, access management, and production maintenance.",
+    "bullets": [
+      "Installed, secured, patched, backed up, and upgraded Red Hat Linux systems.",
+      "Automated maintenance with Shell scripts and provisioned servers with Kickstart and PXE.",
+      "Managed users, groups, permissions, LVM storage, and UNIX/Linux/Solaris troubleshooting."
+    ],
+    "stack": [
+      "Linux",
+      "RHEL",
+      "Solaris",
+      "Shell",
+      "Kickstart",
+      "PXE",
+      "LVM"
+    ]
   }
 ];
 
 const skills = [
-  ["Cloud Platforms", ["AWS", "GCP", "Azure", "EC2", "S3", "RDS", "Cloud SQL", "BigQuery", "VPC", "IAM"]],
-  ["Containers & Orchestration", ["Kubernetes", "GKE", "EKS", "Docker", "Helm", "OpenShift", "ECS", "Ingress", "RBAC"]],
-  ["Infrastructure as Code", ["Terraform", "CloudFormation", "Ansible", "AWS CDK", "ARM", "Bicep", "Deployment Manager"]],
-  ["CI/CD & DevOps", ["Jenkins", "GitLab CI/CD", "GitHub Actions", "Cloud Build", "Rundeck", "Maven", "Bamboo", "Postman"]],
-  ["Monitoring & Logging", ["Splunk", "Dynatrace", "Prometheus", "Grafana", "Moogsoft", "Datadog", "SLOs/SLIs", "RCA"]],
-  ["Linux & Platform Ops", ["Linux", "RHEL", "CentOS", "Solaris", "LVM", "tcpdump", "DNS", "VLANs", "Shell"]],
-  ["Security & Governance", ["Least-privilege IAM", "RBAC", "Delinea PAM", "Bastion hosts", "Key rotation", "SonarQube", "ServiceNow"]],
-  ["Data & AI-adjacent", ["BigQuery", "Databricks", "Spark SQL", "Cloud SQL", "MongoDB", "Azure AI Search", "GraphRAG"]]
+  [
+    "Source Control & Migration",
+    [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Azure DevOps",
+      "Bitbucket",
+      "GitHub CLI",
+      "GitHub REST API",
+      "History / Branch / Tag Migration"
+    ]
+  ],
+  [
+    "CI/CD & Release Engineering",
+    [
+      "GitHub Actions",
+      "GitLab CI/CD",
+      "Jenkins",
+      "Reusable Workflows",
+      "YAML",
+      "GitHub-hosted Runners",
+      "Release Management",
+      "Pipeline Validation"
+    ]
+  ],
+  [
+    "Build & Artifact Management",
+    [
+      "Maven",
+      "Ant",
+      "SonarQube",
+      "Nexus",
+      "JFrog Artifactory",
+      "Cloud Build",
+      "Rundeck"
+    ]
+  ],
+  [
+    "Automation & Infrastructure",
+    [
+      "Python",
+      "Bash",
+      "Shell",
+      "PowerShell",
+      "Terraform",
+      "Ansible",
+      "CloudFormation",
+      "Argo CD"
+    ]
+  ],
+  [
+    "Cloud & Containers",
+    [
+      "AWS",
+      "GCP",
+      "Azure",
+      "Docker",
+      "Kubernetes",
+      "GKE",
+      "EKS",
+      "Helm",
+      "OpenShift"
+    ]
+  ],
+  [
+    "Security & Governance",
+    [
+      "Repository Permissions",
+      "Branch Protection",
+      "Secrets Management",
+      "IAM",
+      "RBAC",
+      "Key rotation",
+      "DevSecOps"
+    ]
+  ],
+  [
+    "Observability & Operations",
+    [
+      "Dynatrace",
+      "Splunk",
+      "Prometheus",
+      "Grafana",
+      "Moogsoft",
+      "Cloud Monitoring",
+      "ServiceNow",
+      "RCA"
+    ]
+  ],
+  [
+    "Linux & Systems",
+    [
+      "Linux",
+      "RHEL",
+      "Solaris",
+      "LVM",
+      "Kickstart",
+      "PXE",
+      "Shell"
+    ]
+  ]
 ];
 
 const projects = [
-  {
-    icon: Network,
-    title: "Multi-cloud Reliability Platform",
-    copy:
-      "Reusable Terraform and CloudFormation patterns for AWS and GCP with Kubernetes standards, monitoring, and secure access controls.",
-    problem: "Cloud environments needed repeatable provisioning, consistent access controls, and reliable delivery paths.",
-    approach: "Standardized IaC, IAM, Kubernetes deployment patterns, tagging, monitoring, and operational runbooks.",
-    outcome: "Improved release consistency, reduced manual infrastructure drift, and supported scalable production operations.",
-    tags: ["AWS", "GCP", "Terraform", "Kubernetes"]
-  },
-  {
-    icon: Workflow,
-    title: "Release Automation System",
-    copy:
-      "Controlled CI/CD workflows across Jenkins, Cloud Build, GitHub, GitLab, and Rundeck to reduce manual release work.",
-    problem: "Manual handoffs and inconsistent release gates increased deployment risk and slowed production changes.",
-    approach: "Automated build, test, promotion, approvals, deployment, verification, rollback, and post-deployment checks.",
-    outcome: "Reduced repetitive release work and created clearer, safer production deployment controls.",
-    tags: ["Jenkins", "Cloud Build", "GitLab", "Rundeck"]
-  },
-  {
-    icon: TimerReset,
-    title: "Incident Response & Observability",
-    copy:
-      "Operational runbooks, dashboards, alerting, RCA workflows, and remediation automation for production incident response.",
-    problem: "Major incidents required faster context, clear ownership, actionable signals, and consistent follow-through.",
-    approach: "Connected monitoring signals with runbooks, ServiceNow workflows, RCA templates, and automated remediation steps.",
-    outcome: "Improved incident coordination, reduced detection/resolution time, and strengthened preventive-action follow-up.",
-    tags: ["SRE", "ServiceNow", "RCA", "Automation"]
-  }
+  { icon: Network, title: "GitHub Repository Migration", copy: "Source code migrations from GitLab, Azure DevOps, and Bitbucket to GitHub.", problem: "Development teams needed to consolidate source repositories without losing version history.", approach: "Used Git, GitHub CLI, and REST APIs to migrate repositories while preserving commit history, branches, and tags.", outcome: "Preserved source history and supported standardized GitHub development workflows.", tags: ["GitHub", "GitLab", "GitHub CLI", "REST APIs"] },
+  { icon: Workflow, title: "GitHub Actions & Release Automation", copy: "GitLab CI/CD conversion and multi-stage delivery across development, QA, staging, and production.", problem: "Existing pipelines needed to transition to GitHub Actions and support repeatable delivery.", approach: "Converted pipeline configurations into YAML workflows for builds, tests, and deployments; investigated execution logs and resolved migration failures.", outcome: "Enabled automated delivery workflows on GitHub and repeatable pipeline troubleshooting.", tags: ["GitHub Actions", "GitLab CI/CD", "Jenkins", "YAML"] },
+  { icon: TimerReset, title: "Cloud Delivery & Production Reliability", copy: "Kubernetes deployments, infrastructure automation, and incident response supporting application releases.", problem: "Application releases depended on consistent environments and actionable production diagnostics.", approach: "Used Terraform, CloudFormation, Docker, Kubernetes, observability tools, and ServiceNow incident/change workflows.", outcome: "Supported controlled deployments, root-cause analysis, and preventive operational actions.", tags: ["Terraform", "Kubernetes", "AWS", "GCP"] }
 ];
 
 const technologies = [
+  "GitHub Actions",
+  "GitHub",
   "AWS",
   "Microsoft Azure",
   "Google Cloud",
@@ -303,14 +434,10 @@ const technologies = [
 ];
 
 const impactStats = [
-  { value: "10+", label: "Years Experience", note: "DevOps, SRE & Linux", icon: Calendar },
-  { value: "3", label: "Cloud Platforms", note: "AWS, GCP, Azure", icon: Cloud },
-  { value: "24/7", label: "Production Support", note: "Major incident response", icon: Clock },
-  { value: "99.96%", label: "SLA Maintained", note: "Production reliability", icon: ShieldCheck },
-  { value: "35%", label: "Lower MTTD", note: "Mean Time To Detect", icon: BarChart3 },
-  { value: "33%", label: "Lower MTTR", note: "Mean Time To Resolve", icon: BarChart3 },
-  { value: "30%", label: "Cost Reduction", note: "Compute optimization", icon: Database },
-  { value: "5M+", label: "Users Supported", note: "Enterprise platforms", icon: Users }
+  { value: "10+", label: "Years Experience", note: "Build, release, DevOps & SRE", icon: Calendar },
+  { value: "GitHub", label: "Repository Migration", note: "History, branches & tags", icon: Network },
+  { value: "CI/CD", label: "Pipeline Engineering", note: "GitHub Actions & Jenkins", icon: Workflow },
+  { value: "3", label: "Cloud Platforms", note: "AWS, GCP & Azure", icon: Cloud }
 ];
 
 const focusAreas = [
@@ -320,11 +447,11 @@ const focusAreas = [
   ["Secure by Design", "IAM, RBAC, governance, controlled access", ShieldCheck]
 ];
 
-const aiReliability = [
-  "AI/ML platform support for GenAI and LLM inference workloads",
-  "Azure AI Search and GraphRAG concepts for incident knowledge retrieval",
-  "Anomaly-detection workflows connected to incident remediation",
-  "Human-in-the-loop operations patterns for safer assisted triage"
+const deliveryPractices = [
+  "Preserve commit history, branches, and tags during repository migrations",
+  "Convert GitLab CI/CD pipelines into GitHub Actions YAML workflows",
+  "Validate builds, tests, deployment configurations, and migration results",
+  "Apply repository permissions, secrets management, and controlled release practices"
 ];
 
 const credentials = [
@@ -349,7 +476,7 @@ const credentials = [
   }
 ];
 
-const resumeUrl = `${import.meta.env.BASE_URL}MOHAMMED-CV-SRE.pdf`;
+const resumeUrl = `${import.meta.env.BASE_URL}Sabeelullah-Mohammed-Build-Release-DevOps-SRE.docx`;
 
 function Brand() {
   return (
@@ -362,7 +489,7 @@ function Brand() {
       </span>
       <span className="brand-copy">
         <strong>SABEELULLAH K MOHAMMED</strong>
-        <small>DevOps | Cloud | SRE</small>
+        <small>Build & Release | DevOps | SRE</small>
       </span>
     </a>
   );
@@ -429,7 +556,7 @@ function App() {
           <div className="hero-portrait" aria-label="Portrait of Sabeelullah K Mohammed">
             <img src={`${import.meta.env.BASE_URL}sab.png`} alt="Sabeelullah K Mohammed" />
           </div>
-          <div className="hero-triad">CLOUD <b>|</b> AUTOMATION <b>|</b> RELIABILITY</div>
+          <div className="hero-triad">BUILD <b>|</b> RELEASE <b>|</b> RELIABILITY</div>
           <div className="hero-name-wrap">
             <div className="hero-name-waves" aria-hidden="true"><i /><i /></div>
           <h1>
@@ -440,8 +567,8 @@ function App() {
             <i className="name-sparkle name-sparkle-three" aria-hidden="true" />
           </h1>
           </div>
-          <h2 className="hero-statement">Building reliable cloud platforms with automation and observability.</h2>
-          <div className="hero-keywords">DEVOPS <b>|</b> CLOUD <b>|</b> AUTOMATION <b>|</b> OBSERVABILITY</div>
+          <h2 className="hero-statement">Build & Release Engineer | DevOps | SRE</h2>
+          <div className="hero-keywords">GITHUB MIGRATIONS <b>|</b> GITHUB ACTIONS <b>|</b> CI/CD</div>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
               <ArrowRight size={17} /> View My Work
@@ -451,7 +578,7 @@ function App() {
             </a>
           </div>
           <p className="hero-location">
-            <MapPin size={18} /> New Jersey · Open to SRE, DevOps, Cloud & Platform Engineering roles
+            <MapPin size={18} /> New Jersey · Open to Build & Release, DevOps and SRE roles
           </p>
         </div>
 
@@ -510,15 +637,15 @@ function App() {
       <section id="about" className="about-section">
         <div className="about-copy">
           <p className="section-label">About Me</p>
-          <h2>DevOps Engineer &amp; SRE with a cloud-first mindset</h2>
+          <h2>Reliable releases, from source code to production</h2>
           <p>
-            I’m Sabeelullah K Mohammed, a DevOps and SRE engineer with 10+ years of experience building,
-            automating, and operating production infrastructure. My work spans AWS, GCP, Azure,
-            Kubernetes, Terraform, CI/CD, Linux, observability, release engineering, and incident response.
+            I’m Sabeelullah K Mohammed, a Build and Release Engineer with 10+ years of experience
+            across DevOps, SRE, source code management, CI/CD, and enterprise software delivery.
           </p>
           <p>
-            I focus on reliable systems, controlled delivery, measurable operations, and practical automation
-            that helps teams move faster without sacrificing production stability.
+            I migrate repositories to GitHub, convert GitLab CI/CD pipelines to GitHub Actions,
+            and automate builds, tests, and deployments. My broader experience includes Kubernetes,
+            Terraform, AWS, GCP, Azure, Linux, observability, and incident response.
           </p>
           <div className="about-actions">
             <a className="button primary compact" href="#experience">
@@ -527,7 +654,7 @@ function App() {
             <div className="about-mini-stats" aria-label="Profile highlights">
               <span><BadgeCheck size={21} /><strong>10+</strong><small>Years Experience</small></span>
               <span><Cloud size={23} /><strong>3</strong><small>Cloud Platforms</small></span>
-              <span><Users size={22} /><strong>5M+</strong><small>Users Supported</small></span>
+              <span><Workflow size={22} /><strong>CI/CD</strong><small>Release Automation</small></span>
             </div>
           </div>
         </div>
@@ -645,12 +772,12 @@ function App() {
 
       <section className="ai-section">
         <div className="section-intro">
-          <p className="section-label">Applied AI Reliability</p>
-          <h2>AI-assisted operations as a secondary specialization</h2>
-          <p>Reliability work increasingly depends on better signal handling, knowledge retrieval, and careful human-in-the-loop automation.</p>
+          <p className="section-label">Migration &amp; Delivery Practices</p>
+          <h2>Source integrity. Repeatable delivery.</h2>
+          <p>Practical engineering across repository migration, workflow conversion, validation, and secure releases.</p>
         </div>
         <div className="ai-grid">
-          {aiReliability.map((item) => (
+          {deliveryPractices.map((item) => (
             <article className="ai-card" key={item}>
               <TerminalSquare size={22} />
               <p>{item}</p>
@@ -695,7 +822,7 @@ function App() {
         <div className="contact-copy">
           <p className="section-label">Let’s Connect</p>
           <h2>Open to opportunities</h2>
-          <p>I’m open to SRE, DevOps, Cloud, Kubernetes, Linux, Terraform, and platform engineering opportunities.</p>
+          <p>I’m open to Build and Release Engineer, DevOps Engineer, CI/CD Engineer, GitHub Migration Engineer, and SRE opportunities.</p>
         </div>
         <div className="contact-links">
           <a href="mailto:mohdsab1525@gmail.com">
