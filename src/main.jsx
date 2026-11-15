@@ -576,7 +576,7 @@ function App() {
             <i className="name-sparkle name-sparkle-three" aria-hidden="true" />
           </h1>
           </div>
-          <h2 className="hero-statement">Site Reliability Engineer | AWS DevOps</h2>
+          <h2 className="hero-statement">Site Reliability Engineer | AWS DevOps | AWS Certified Solutions Architect – Associate</h2>
           <div className="hero-keywords">AWS / EKS <b>|</b> GITHUB ACTIONS <b>|</b> PRODUCTION SUPPORT</div>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
