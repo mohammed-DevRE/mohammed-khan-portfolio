@@ -485,7 +485,7 @@ const credentials = [
   }
 ];
 
-const resumeUrl = `${import.meta.env.BASE_URL}Sabeelullah-Mohammed-Build-Release-DevOps-SRE.docx`;
+const resumeUrl = `${import.meta.env.BASE_URL}resume-preview/index.html`;
 
 function Brand() {
   return (
