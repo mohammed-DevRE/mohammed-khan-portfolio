@@ -171,14 +171,14 @@ const roles = [
     "title": "DevOps Engineer",
     "company": "SAP Ariba",
     "place": "Remote",
-    "summary": "GitHub migration, CI/CD engineering, release automation, and production reliability for enterprise application delivery.",
+    "summary": "SRE and L2/L3 production support across enterprise platforms, with cloud automation, Kubernetes delivery, and incident response.",
     "bullets": [
       "Migrated GitLab repositories to GitHub and converted GitLab CI/CD pipelines into GitHub Actions YAML workflows for automated builds, tests, and deployments.",
       "Manage branching, merging, tagging, and releases; partner with developers on pull requests, code reviews, migration guidance, and engineering standards.",
       "Design multi-stage pipelines with GitHub Actions, Jenkins, Cloud Build, and Rundeck across development, QA, staging, and production.",
       "Deploy Docker and Kubernetes workloads on GKE/EKS; provision AWS and GCP infrastructure with Terraform and CloudFormation.",
       "Automate operational workflows with Python, Shell, Perl, and Rundeck; troubleshoot build and deployment failures using logs, JVM diagnostics, and observability tools.",
-      "Coordinate major incidents, root-cause analysis, preventive actions, and ServiceNow change workflows."
+      "Use Splunk and Dynatrace to investigate production issues. Coordinate major incident triage, root-cause analysis, and preventive actions."
     ],
     "stack": [
       "GitHub Actions",
@@ -410,10 +410,19 @@ const skills = [
   ]
 ];
 
-const projects = [
+const migrationProjects = [
   { icon: Network, title: "GitHub Repository Migration", copy: "Source code migrations from GitLab, Azure DevOps, and Bitbucket to GitHub.", problem: "Development teams needed to consolidate source repositories without losing version history.", approach: "Used Git, GitHub CLI, and REST APIs to migrate repositories while preserving commit history, branches, and tags.", outcome: "Preserved source history and supported standardized GitHub development workflows.", tags: ["GitHub", "GitLab", "GitHub CLI", "REST APIs"] },
   { icon: Workflow, title: "GitHub Actions & Release Automation", copy: "GitLab CI/CD conversion and multi-stage delivery across development, QA, staging, and production.", problem: "Existing pipelines needed to transition to GitHub Actions and support repeatable delivery.", approach: "Converted pipeline configurations into YAML workflows for builds, tests, and deployments; investigated execution logs and resolved migration failures.", outcome: "Enabled automated delivery workflows on GitHub and repeatable pipeline troubleshooting.", tags: ["GitHub Actions", "GitLab CI/CD", "Jenkins", "YAML"] },
-  { icon: TimerReset, title: "Cloud Delivery & Production Reliability", copy: "Kubernetes deployments, infrastructure automation, and incident response supporting application releases.", problem: "Application releases depended on consistent environments and actionable production diagnostics.", approach: "Used Terraform, CloudFormation, Docker, Kubernetes, observability tools, and ServiceNow incident/change workflows.", outcome: "Supported controlled deployments, root-cause analysis, and preventive operational actions.", tags: ["Terraform", "Kubernetes", "AWS", "GCP"] }
+];
+
+const projects = [
+  { icon: TimerReset, title: "Cloud Delivery & Production Reliability", copy: "Kubernetes deployments, infrastructure automation, and incident response supporting application releases.", problem: "Application releases depended on consistent environments and actionable production diagnostics.", approach: "Used Terraform, CloudFormation, Docker, Kubernetes, observability tools, and ServiceNow incident/change workflows.", outcome: "Supported controlled deployments, root-cause analysis, and preventive operational actions.", tags: ["Terraform", "Kubernetes", "AWS", "GCP"] },
+  { icon: BarChart3, title: "Production Observability & Incident Response", copy: "Production triage, service recovery, and follow-up for enterprise applications.", problem: "Major incidents required teams to correlate application symptoms with service and infrastructure signals.", approach: "Used Splunk logs and Dynatrace APM, coordinated incident bridges, and documented root causes and preventive actions.", outcome: "Supported triage, stakeholder updates, and follow-up after major incidents.", tags: ["Splunk", "Dynatrace", "RHEL"] }
+];
+
+const sreAnimations = [
+  { file: "sre-eks-rollout", category: "AWS / Kubernetes", title: "Rolling out an EKS deployment", description: "Illustrative workflow covering build checks, rolling updates, pod readiness, health verification, and rollback." },
+  { file: "sre-incident-response", category: "Production Support", title: "Responding to a production incident", description: "Illustrative workflow covering alert triage, Splunk and Dynatrace investigation, mitigation, verification, and root-cause follow-up." },
 ];
 
 const technologies = [
@@ -435,7 +444,7 @@ const technologies = [
 
 const impactStats = [
   { value: "10+", label: "Years Experience", note: "Build, release, DevOps & SRE", icon: Calendar },
-  { value: "GitHub", label: "Repository Migration", note: "History, branches & tags", icon: Network },
+  { value: "EKS", label: "Kubernetes Operations", note: "Rollouts, scaling & readiness", icon: Server },
   { value: "CI/CD", label: "Pipeline Engineering", note: "GitHub Actions & Jenkins", icon: Workflow },
   { value: "3", label: "Cloud Platforms", note: "AWS, GCP & Azure", icon: Cloud }
 ];
@@ -448,10 +457,10 @@ const focusAreas = [
 ];
 
 const deliveryPractices = [
-  "Preserve commit history, branches, and tags during repository migrations",
-  "Convert GitLab CI/CD pipelines into GitHub Actions YAML workflows",
-  "Validate builds, tests, deployment configurations, and migration results",
-  "Apply repository permissions, secrets management, and controlled release practices"
+  "Provision AWS environments with Terraform and CloudFormation",
+  "Validate builds and automate releases with GitHub Actions and Jenkins",
+  "Roll out Kubernetes changes with readiness checks and verify service health",
+  "Use logs and APM to triage incidents and document preventive actions"
 ];
 
 const credentials = [
@@ -489,7 +498,7 @@ function Brand() {
       </span>
       <span className="brand-copy">
         <strong>SABEELULLAH K MOHAMMED</strong>
-        <small>Build & Release | DevOps | SRE</small>
+        <small>SRE | AWS DevOps | Production Support</small>
       </span>
     </a>
   );
@@ -567,8 +576,8 @@ function App() {
             <i className="name-sparkle name-sparkle-three" aria-hidden="true" />
           </h1>
           </div>
-          <h2 className="hero-statement">Build & Release Engineer | DevOps | SRE</h2>
-          <div className="hero-keywords">GITHUB MIGRATIONS <b>|</b> GITHUB ACTIONS <b>|</b> CI/CD</div>
+          <h2 className="hero-statement">Site Reliability Engineer | AWS DevOps</h2>
+          <div className="hero-keywords">AWS / EKS <b>|</b> GITHUB ACTIONS <b>|</b> PRODUCTION SUPPORT</div>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
               <ArrowRight size={17} /> View My Work
@@ -578,7 +587,7 @@ function App() {
             </a>
           </div>
           <p className="hero-location">
-            <MapPin size={18} /> New Jersey · Open to Build & Release, DevOps and SRE roles
+            <MapPin size={18} /> New Jersey · Open to SRE, AWS DevOps and production support roles
           </p>
         </div>
 
@@ -637,15 +646,16 @@ function App() {
       <section id="about" className="about-section">
         <div className="about-copy">
           <p className="section-label">About Me</p>
-          <h2>Reliable releases, from source code to production</h2>
+          <h2>Keeping production services healthy</h2>
           <p>
-            I’m Sabeelullah K Mohammed, a Build and Release Engineer with 10+ years of experience
-            across DevOps, SRE, source code management, CI/CD, and enterprise software delivery.
+            I’m Sabeelullah K Mohammed. My experience spans site reliability engineering, AWS DevOps,
+            and L2/L3 production support for enterprise applications.
           </p>
           <p>
-            I migrate repositories to GitHub, convert GitLab CI/CD pipelines to GitHub Actions,
-            and automate builds, tests, and deployments. My broader experience includes Kubernetes,
-            Terraform, AWS, GCP, Azure, Linux, observability, and incident response.
+            I operate Kubernetes workloads on Amazon EKS, provision cloud infrastructure with Terraform
+            and CloudFormation, and automate build, test, and deployment workflows with GitHub Actions
+            and Jenkins. In production, I use Splunk logs, Dynatrace APM, and CloudWatch metrics to
+            diagnose issues, support incident response, and verify recovery. My Linux background includes RHEL administration.
           </p>
           <div className="about-actions">
             <a className="button primary compact" href="#experience">
@@ -743,18 +753,42 @@ function App() {
           <a href="#contact">Discuss a Project <ArrowRight size={15} /></a>
         </div>
 
-        <figure className="workflow-showcase">
+        <div className="sre-workflows">
+          {sreAnimations.map(({ file, category, title, description }) => (
+            <figure className="workflow-showcase" key={file}>
+              <div className="workflow-heading">
+                <div><p className="section-label">{category}</p><h3>{title}</h3></div>
+                <a href={`${import.meta.env.BASE_URL}${file}.gif`} target="_blank" rel="noopener noreferrer">View GIF <ExternalLink size={15} /></a>
+              </div>
+              <picture>
+                <source media="(prefers-reduced-motion: reduce)" srcSet={`${import.meta.env.BASE_URL}${file}.png`} />
+                <img className="sre-workflow-gif" src={`${import.meta.env.BASE_URL}${file}.gif`} alt={description} width="1056" height="594" loading="lazy" />
+              </picture>
+              <figcaption>{description}</figcaption>
+            </figure>
+          ))}
+        </div>
+
+        <details className="workflow-showcase migration-details">
+          <summary>GitHub Migration &amp; CI/CD</summary>
+          <figure className="workflow-showcase">
           <div className="workflow-heading">
             <div><p className="section-label">GitHub Migration &amp; CI/CD</p><h3>From legacy repositories to reusable workflows</h3></div>
             <a href={`${import.meta.env.BASE_URL}github-migration-workflow.gif`} target="_blank" rel="noopener noreferrer">View GIF <ExternalLink size={15} /></a>
           </div>
-          <video className="workflow-animation" autoPlay loop muted playsInline controls preload="metadata" poster={`${import.meta.env.BASE_URL}github-migration-workflow.png`} aria-label="Illustrative GitHub migration and delivery workflow: migrate repositories, convert to reusable GitHub Actions YAML, build and test, secure, approve, and release.">
+          <video className="workflow-animation" loop muted playsInline controls preload="none" poster={`${import.meta.env.BASE_URL}github-migration-workflow.png`} aria-label="Illustrative GitHub migration and delivery workflow: migrate repositories, convert to reusable GitHub Actions YAML, build and test, secure, approve, and release.">
             <source src={`${import.meta.env.BASE_URL}github-migration-workflow.mp4`} type="video/mp4" />
             <a href={`${import.meta.env.BASE_URL}github-migration-workflow.gif`}>View animated GitHub migration workflow</a>
           </video>
           <img className="workflow-still" src={`${import.meta.env.BASE_URL}github-migration-workflow.png`} alt="GitLab, Azure DevOps, and Bitbucket to GitHub: migrate, convert, build and test, secure, approve, and release." width="1200" height="675" loading="lazy" />
           <figcaption>Illustrative workflow: preserve source history, translate pipelines into reusable GitHub Actions, and validate controlled releases.</figcaption>
         </figure>
+          <div className="migration-projects">
+            {migrationProjects.map(({ title, copy, approach, outcome }) => (
+              <article key={title}><h4>{title}</h4><p>{copy} {approach} {outcome}</p></article>
+            ))}
+          </div>
+        </details>
 
         <div className="project-grid">
           {projects.map((project) => {
@@ -785,9 +819,9 @@ function App() {
 
       <section className="ai-section">
         <div className="section-intro">
-          <p className="section-label">Migration &amp; Delivery Practices</p>
-          <h2>Source integrity. Repeatable delivery.</h2>
-          <p>Practical engineering across repository migration, workflow conversion, validation, and secure releases.</p>
+          <p className="section-label">SRE &amp; Delivery Practices</p>
+          <h2>Reliable delivery and production support</h2>
+          <p>Infrastructure automation, deployment validation, observability, and incident response.</p>
         </div>
         <div className="ai-grid">
           {deliveryPractices.map((item) => (
@@ -835,7 +869,7 @@ function App() {
         <div className="contact-copy">
           <p className="section-label">Let’s Connect</p>
           <h2>Open to opportunities</h2>
-          <p>I’m open to Build and Release Engineer, DevOps Engineer, CI/CD Engineer, GitHub Migration Engineer, and SRE opportunities.</p>
+          <p>I’m open to SRE, AWS DevOps, and production support opportunities.</p>
         </div>
         <div className="contact-links">
           <a href="mailto:mohdsab1525@gmail.com">
